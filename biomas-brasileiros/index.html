@@ -4,43 +4,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><strong>Biomas Brasileiros</strong></title>
+    <title>Biomas Brasileiros</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+        }
+        .header, .footer {
+            background-color: #009879;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .nav {
+            background-color: #f8b24f;
+            text-align: center;
+            padding: 20px;
+        }
+        .nav a {
+            background-color: #009879;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 12px;
+            margin: 0 10px;
+        }
+        .content {
+            flex-grow: 1;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+    </style>
 </head>
 
 <body>
-    <u><strong><h1>Biomas Brasileiros</h1></strong></u>
+    <div class="header">
+        <u><strong><h1>Biomas Brasileiros</h1></strong></u>
+    </div>
 
-    <hr>
+    <div class="nav">
+        <a href="./biomas/amazonico.html">Amazônico</a>
+        <a href="./biomas/caatinga.html">Caatinga</a>
+        <a href="./biomas/cerrado.html">Cerrado</a>
+        <a href="./biomas/mataatlantica.html">Mata Atlântica</a>
+        <a href="./biomas/pampa.html">Pampa</a>
+        <a href="./biomas/pantanal.html">Pantanal</a>
+    </div>
 
-    <h2><strong>Amazônico</strong></h2>
-    <a href="./biomas/amazonico.html">Ver mais</a>
+    <div class="content">
+        <img src="imagensbiomas/mapabiomas.png" class="center">
+    </div>
 
-    <hr>
-
-    <h2><strong>Pampa</strong></h2>
-    <a href="./biomas/pampa.html">Ver mais</a>
-
-    <hr>
-
-    <h2><strong>Cerrado</strong></h2>
-    <a href="./biomas/cerrado.html">Ver mais</a>
-
-    <hr>
-
-    <h2><strong>Pantanal</strong></h2>
-    <a href="./biomas/pantanal.html">Ver mais</a>
-
-    <hr>
-
-    <h2><strong>Caatinga</strong></h2>
-    <a href="./biomas/caatinga.html">Ver mais</a>
-    
-    <hr>
-
-    <h2><strong>Mata Atlântica</strong></h2>
-    <a href="./biomas/mataatlantica.html">Ver mais</a>
-
-    <hr>
+    <div class="footer">
+        <hr>
+    </div>
 </body>
 
 </html>

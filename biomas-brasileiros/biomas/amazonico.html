@@ -1,34 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><strong>Bioma Amazônico</strong></title>
+    <title>Bioma Amazônico</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+        }
+        .header, .footer {
+            background-color: #009879;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .nav {
+            background-color: #f8b24f;
+            text-align: center;
+            padding: 20px;
+        }
+        .nav a {
+            background-color: #009879;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 12px;
+            margin: 0 10px;
+        }
+        .content {
+            flex-grow: 1;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+    </style>
 </head>
 
 <body>
-    <a href="../index.html">Voltar</a>
-    <h1><strong>Bioma Amazônico</strong></h1>
-    <p>O bioma <em>Amazônia</em> compreende uma área na qual se encontra a maior floresta tropical do mundo. A Floresta
+    <div class="header">
+        <u><strong><h1>Bioma Amazônico</h1></strong></u>
+    </div>
+
+    <div class="nav">
+        <a href="../index.html">🏠 Home</a>
+    </div>
+
+    <div class="content">
+        <p>O bioma <em>Amazônico</em> compreende uma área na qual se encontra a maior floresta tropical do mundo. A Floresta
         Amazônicaestende-se por nove países da América do Sul, sendo sua maior porção localizada no Brasil, ocupando
         cerca de 40%do território. É o maior de todos os biomas brasileiros. Caracteriza-se pela presença de diversos
         ecossistemas epor deter grande biodiversidade na fauna e na flora. Esse bioma compreende uma região constituída
         pela maiorbacia hidrográfica do mundo: a Bacia Amazônica.</p>
 
-    <h2><u>Fauna e Flora</u></h2>
-    <p>Os principais representantes da fauna são onça-pintada, boto-cor-de-rosa, arara-azul, capivara, tatu e
+        <h2><u>Fauna e Flora</u></h2>
+        <p>Os principais representantes da fauna são onça-pintada, boto-cor-de-rosa, arara-azul, capivara, tatu e
         cobras,como a cascavel e a jararaca. A flora é constituída por aproximadamente 30 mil espécies das quase 100
         milexistentes na América Latina. Entre as espécies de plantas mais conhecidas, destaca-se a
         vitória-régia,característica dos igapós.</p>
 
-    <h2><u>Hidrografia</u></h2>
-    <p>O bioma Amazônia compreende uma região que abrange a maior bacia hidrográfica do mundo, a Bacia Amazônica, que
+        <h2><u>Hidrografia</u></h2>
+        <p>O bioma Amazônia compreende uma região que abrange a maior bacia hidrográfica do mundo, a Bacia Amazônica, que
         detém 20% da água doce do planeta. O Rio Amazonas é o principal e o maior em volume de água do mundo, recebendo
         vários afluentes.</p>
 
-    <h2><u>Clima</u></h2>
-    <p>Compreende uma região de clima quente e úmido, apresentando umidade do ar elevada durante todo o ano. O índice
+        <h2><u>Clima</u></h2>
+        <p>Compreende uma região de clima quente e úmido, apresentando umidade do ar elevada durante todo o ano. O índice
         pluviométrico também é elevado, sendo mais de 2000 mm de chuvas provenientes da própria floresta.
     </p>
 
@@ -42,6 +87,11 @@
     <p>O solo da Amazônia é arenoso e apresenta uma camada de húmus resultante da deposição de floras, frutos e restos
         de animais. Apesar disso, apenas cerca de 14% do território pode ser considerado fértil para práticas agrícolas.
     </p>
+    </div>
+
+    <div class="footer">
+        <hr>
+    </div>
 </body>
 
 </html>
