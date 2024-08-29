@@ -5,11 +5,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bioma Pampa</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+        }
+        .header, .footer {
+            background-color: #009879;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .nav {
+            background-color: #f8b24f;
+            text-align: center;
+            padding: 20px;
+        }
+        .nav a {
+            background-color: #009879;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 12px;
+            margin: 0 10px;
+        }
+        .content {
+            flex-grow: 1;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+    </style>
 </head>
+ <body>
+    
+    <div class="header">
+        <h1>
+            <strong>Bioma Pampa</strong>
+            
+        </h1>
+    </div>
 
-<body>
-    <a href="../index.html">Voltar</a>
-    <h1><strong>Bioma Pampa</strong></h1>
+    <div class="nav"><a href="../index.html">Voltar</a></div>
+    
+
+  <div class="content">
     <p>O bioma <em>Pampa</em>, conhecido também como Campos Sulinos, ocupa cerca de 2% do território brasileiro, abrangendo o território do estado do Rio Grande do Sul. O nome “pampa” tem origem indígena e designa uma região plana. A paisagem desse bioma é composta, em sua maioria, por campos nativos. O Pampa apresenta grande biodiversidade.</p>
 
     <h2><u>Fauna e Flora</u></h2>
@@ -28,6 +75,11 @@
 
     <h2><u>Solo</u></h2>
     <p>Os solos do Pampa são, geralmente, pouco férteis e propícios à erosão. Em virtude da prática agrícola (monocultura) realizada nessa área e da pecuária, uma grande parte desse bioma foi devastada, intensificando os processos erosivos, tornando os solos arenosos.</p>
+   </div>
+    <div class="footer">
+        <hr>
+    </div>
+
 </body>
 
 </html>
