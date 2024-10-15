@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flora da Escola</title>
+    <link rel="stylesheet" href="styles.css">
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    color: #4CAF50;
+    font-size: 2.5em;
+}
+
+p {
+    color: #555;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.plant {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    padding-bottom: 50px; /* Espaço extra para o botão */
+    text-align: center;
+    width: 250px;
+    position: relative;
+}
+
+.plant img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.plant h2 {
+    margin: 15px 0 10px;
+    color: #333;
+}
+
+.plant p {
+    color: #777;
+    margin-bottom: 20px; /* Mais espaço entre o texto e o botão */
+}
+
+.ver-mais {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+.ver-mais:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px 0;
+    background-color: #4CAF50;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+</style>
+</head>
+<body>
+    <header>
+        <h1>Flora da Escola</h1>
+        <p>Uma coleção de plantas encontradas no perímetro da escola</p>
+    </header>
+
+    <section class="gallery">
+        <div class="plant">
+            <img src="imagens/planta1.jpg" alt="Nome da Planta 1">
+            <h2>Nome da Planta 1</h2>
+            <p>Descrição breve da planta 1.</p>
+            <a class="ver-mais" href="planta1.html">Ver mais</a>
+        </div>
+
+        <div class="plant">
+            <img src="imagens/planta2.jpg" alt="Nome da Planta 2">
+            <h2>Nome da Planta 2</h2>
+            <p>Descrição breve da planta 2.</p>
+            <a class="ver-mais" href="planta2.html">Ver mais</a>
+        </div>
+
+        <div class="plant">
+            <img src="imagens/planta3.jpg" alt="Nome da Planta 3">
+            <h2>Nome da Planta 3</h2>
+            <p>Descrição breve da planta 3.</p>
+            <a class="ver-mais" href="planta3.html">Ver mais</a>
+        </div>
+
+        <div class="plant">
+            <img src="imagens/planta4.jpg" alt="Nome da Planta 4">
+            <h2>Nome da Planta 4</h2>
+            <p>Descrição breve da planta 4.</p>
+            <a class="ver-mais" href="planta4.html">Ver mais</a>
+        </div>
+
+        <div class="plant">
+            <img src="imagens/planta5.jpg" alt="Nome da Planta 5">
+            <h2>Nome da Planta 5</h2>
+            <p>Descrição breve da planta 5.</p>
+            <a class="ver-mais" href="planta5.html">Ver mais</a>
+        </div>
+
+        <div class="plant">
+            <img src="imagens/planta6.jpg" alt="Nome da Planta 6">
+            <h2>Nome da Planta 6</h2>
+            <p>Descrição breve da planta 6.</p>
+            <a class="ver-mais" href="planta6.html">Ver mais</a>
+        </div>
+
+        <div class="plant">
+            <img src="imagens/planta7.jpg" alt="Nome da Planta 7">
+            <h2>Nome da Planta 7</h2>
+            <p>Descrição breve da planta 7.</p>
+            <a class="ver-mais" href="planta7.html">Ver mais</a>
+        </div>
+
+        <div class="plant">
+            <img src="imagens/planta7.jpg" alt="Nome da Planta 7">
+            <h2>Nome da Planta 7</h2>
+            <p>Descrição breve da planta 7.</p>
+            <a class="ver-mais" href="planta7.html">Ver mais</a>
+        </div>
+        
+        <div class="plant">
+            <img src="imagens/planta8.jpg" alt="Nome da Planta 8">
+            <h2>Nome da Planta 8</h2>
+            <p>Descrição breve da planta 8.</p>
+            <a class="ver-mais" href="planta8.html">Ver mais</a>
+        </div>
+        
+        <div class="plant">
+            <img src="imagens/planta9.jpg" alt="Nome da Planta 9">
+            <h2>Nome da Planta 9</h2>
+            <p>Descrição breve da planta 9.</p>
+            <a class="ver-mais" href="planta9.html">Ver mais</a>
+        </div>
+        
+        <div class="plant">
+            <img src="imagens/planta10.jpg" alt="Nome da Planta 10">
+            <h2>Nome da Planta 10</h2>
+            <p>Descrição breve da planta 10.</p>
+            <a class="ver-mais" href="planta10.html">Ver mais</a>
+        </div>
+        
+        <div class="plant">
+            <img src="imagens/planta11.jpg" alt="Nome da Planta 11">
+            <h2>Nome da Planta 11</h2>
+            <p>Descrição breve da planta 11.</p>
+            <a class="ver-mais" href="planta11.html">Ver mais</a>
+        </div>
+        
+        <div class="plant">
+            <img src="imagens/planta12.jpg" alt="Nome da Planta 12">
+            <h2>Nome da Planta 12</h2>
+            <p>Descrição breve da planta 12.</p>
+            <a class="ver-mais" href="planta12.html">Ver mais</a>
+        </div>
+        
+        <div class="plant">
+            <img src="imagens/planta13.jpg" alt="Nome da Planta 13">
+            <h2>Nome da Planta 13</h2>
+            <p>Descrição breve da planta 13.</p>
+            <a class="ver-mais" href="planta13.html">Ver mais</a>
+        </div>
+        
+        <div class="plant">
+            <img src="imagens/planta14.jpg" alt="Nome da Planta 14">
+            <h2>Nome da Planta 14</h2>
+            <p>Descrição breve da planta 14.</p>
+            <a class="ver-mais" href="planta14.html">Ver mais</a>
+        </div>
+        
+        <div class="plant">
+            <img src="imagens/planta15.jpg" alt="Nome da Planta 15">
+            <h2>Nome da Planta 15</h2>
+            <p>Descrição breve da planta 15.</p>
+            <a class="ver-mais" href="planta15.html">Ver mais</a>
+        </div>
+
+        <div class="plant">
+            <img src="imagens/planta15.jpg" alt="Nome da Planta 15">
+            <h2>Nome da Planta 15</h2>
+            <p>Descrição breve da planta 15.</p>
+            <a class="ver-mais" href="planta15.html">Ver mais</a>
+        </div>
+        
+        <div class="plant">
+            <img src="imagens/planta16.jpg" alt="Nome da Planta 16">
+            <h2>Nome da Planta 16</h2>
+            <p>Descrição breve da planta 16.</p>
+            <a class="ver-mais" href="planta16.html">Ver mais</a>
+        </div>
+        
+        <div class="plant">
+            <img src="imagens/planta17.jpg" alt="Nome da Planta 17">
+            <h2>Nome da Planta 17</h2>
+            <p>Descrição breve da planta 17.</p>
+            <a class="ver-mais" href="planta17.html">Ver mais</a>
+        </div>
+        
+        <div class="plant">
+            <img src="imagens/planta18.jpg" alt="Nome da Planta 18">
+            <h2>Nome da Planta 18</h2>
+            <p>Descrição breve da planta 18.</p>
+            <a class="ver-mais" href="planta18.html">Ver mais</a>
+        </div>
+        
+        <div class="plant">
+            <img src="imagens/planta19.jpg" alt="Nome da Planta 19">
+            <h2>Nome da Planta 19</h2>
+            <p>Descrição breve da planta 19.</p>
+            <a class="ver-mais" href="planta19.html">Ver mais</a>
+        </div>
+        
+        <div class="plant">
+            <img src="imagens/planta20.jpg" alt="Nome da Planta 20">
+            <h2>Nome da Planta 20</h2>
+            <p>Descrição breve da planta 20.</p>
+            <a class="ver-mais" href="planta20.html">Ver mais</a>
+        </div>
+        
+        <div class="plant">
+            <img src="imagens/planta21.jpg" alt="Nome da Planta 21">
+            <h2>Nome da Planta 21</h2>
+            <p>Descrição breve da planta 21.</p>
+            <a class="ver-mais" href="planta21.html">Ver mais</a>
+        </div>
+        
+        <div class="plant">
+            <img src="imagens/planta22.jpg" alt="Nome da Planta 22">
+            <h2>Nome da Planta 22</h2>
+            <p>Descrição breve da planta 22.</p>
+            <a class="ver-mais" href="planta22.html">Ver mais</a>
+        </div>
+        
+        <div class="plant">
+            <img src="imagens/planta23.jpg" alt="Nome da Planta 23">
+            <h2>Nome da Planta 23</h2>
+            <p>Descrição breve da planta 23.</p>
+            <a class="ver-mais" href="planta23.html">Ver mais</a>
+        </div>
+        
+        <div class="plant">
+            <img src="imagens/planta24.jpg" alt="Nome da Planta 24">
+            <h2>Nome da Planta 24</h2>
+            <p>Descrição breve da planta 24.</p>
+            <a class="ver-mais" href="planta24.html">Ver mais</a>
+        </div>
+        
+        <div class="plant">
+            <img src="imagens/planta25.jpg" alt="Nome da Planta 25">
+            <h2>Nome da Planta 25</h2>
+            <p>Descrição breve da planta 25.</p>
+            <a class="ver-mais" href="planta25.html">Ver mais</a>
+        </div>
+        
+        <div class="plant">
+            <img src="imagens/planta26.jpg" alt="Nome da Planta 26">
+            <h2>Nome da Planta 26</h2>
+            <p>Descrição breve da planta 26.</p>
+            <a class="ver-mais" href="planta26.html">Ver mais</a>
+        </div>
+        
+        <div class="plant">
+            <img src="imagens/planta27.jpg" alt="Nome da Planta 27">
+            <h2>Nome da Planta 27</h2>
+            <p>Descrição breve da planta 27.</p>
+            <a class="ver-mais" href="planta27.html">Ver mais</a>
+        </div>
+        
+        <div class="plant">
+            <img src="imagens/planta28.jpg" alt="Nome da Planta 28">
+            <h2>Nome da Planta 28</h2>
+            <p>Descrição breve da planta 28.</p>
+            <a class="ver-mais" href="planta28.html">Ver mais</a>
+        </div>
+        
+        <div class="plant">
+            <img src="imagens/planta29.jpg" alt="Nome da Planta 29">
+            <h2>Nome da Planta 29</h2>
+            <p>Descrição breve da planta 29.</p>
+            <a class="ver-mais" href="planta29.html">Ver mais</a>
+        </div>
+        
+        <div class="plant">
+            <img src="imagens/planta30.jpg" alt="Nome da Planta 30">
+            <h2>Nome da Planta 30</h2>
+            <p>Descrição breve da planta 30.</p>
+            <a class="ver-mais" href="planta30.html">Ver mais</a>
+        </div>
+        
+
+    </section>
+
+    <footer>
+        <p>Trabalho de Flora da Escola - 2024</p>
+    </footer>
+
+</body>
+</html>
