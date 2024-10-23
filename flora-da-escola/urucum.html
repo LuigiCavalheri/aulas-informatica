@@ -32,19 +32,40 @@
             font-size: 28px;
         }
 
-        header p {
-            font-size: 16px;
-            margin-top: 5px;
+        .plant-info {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: 20px;
+            width: 80%;
         }
 
-        .plant-list {
+        .plant-image {
+            display: flex;
+            gap: 10px;
+        }
+
+        .plant-image img {
+            max-height: 400px;
+            width: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .plant-details {
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .rest-info {
+            margin-top: 20px;
             width: 80%;
-            margin: 20px 0;
         }
 
         .plant-button {
-            margin: 10px 0;
-            width: 100%;
+            margin-top: 20px;
             background-color: #3498db;
             border-radius: 5px;
             text-align: center;
@@ -71,10 +92,7 @@
             text-align: center;
             padding: 10px;
             margin-top: 20px;
-            position: fixed;
-            bottom: 0;
         }
-
     </style>
 </head>
 <body>
@@ -84,7 +102,8 @@
 
     <section class="plant-info">
         <div class="plant-image">
-            <img src="imagens/urucum.jpg" alt="Urucum">
+            <img src="conteudo/Urucum.jpg" alt="Urucum">
+            <img src="conteudo/foto internet/urucum-internet.png" alt="Urucum - Imagem da Internet">
         </div>
 
         <div class="plant-details">
@@ -93,25 +112,27 @@
             <p><strong>Nome popular:</strong> Urucum</p>
             <p><strong>Família:</strong> Bixaceae</p>
             <p><strong>Origem:</strong> América Tropical, especialmente na Amazônia.</p>
-
-            <h2>Características</h2>
-            <ul>
-                <li>Arbusto que pode atingir até 3 metros de altura.</li>
-                <li>Possui folhas grandes e ovaladas, que podem medir até 30 cm de comprimento.</li>
-                <li>Produz flores rosadas ou brancas, seguidas por frutos espinhosos que contêm sementes vermelhas.</li>
-                <li>As sementes são a fonte do pigmento natural conhecido como urucum, utilizado como corante alimentar e em cosméticos.</li>
-            </ul>
-
-            <h2>Curiosidades</h2>
-            <p>O urucum é amplamente utilizado na culinária, especialmente na Amazônia, onde é adicionado a pratos para dar cor e sabor. Além disso, é usado por comunidades indígenas para tintura de pele e roupas.</p>
-
-            <h2>Cuidados</h2>
-            <ul>
-                <li>Prefere locais ensolarados e solo bem drenado.</li>
-                <li>É uma planta resistente, mas requer regas regulares em períodos secos.</li>
-                <li>Pode ser cultivada em jardins ou vasos grandes, e precisa de espaço para se desenvolver.</li>
-            </ul>
         </div>
+    </section>
+
+    <section class="rest-info">
+        <h2>Características</h2>
+        <ul>
+            <li>Arbusto que pode atingir até 3 metros de altura.</li>
+            <li>Possui folhas grandes e ovaladas, que podem medir até 30 cm de comprimento.</li>
+            <li>Produz flores rosadas ou brancas, seguidas por frutos espinhosos que contêm sementes vermelhas.</li>
+            <li>As sementes são a fonte do pigmento natural conhecido como urucum, utilizado como corante alimentar e em cosméticos.</li>
+        </ul>
+
+        <h2>Curiosidades</h2>
+        <p>O urucum é amplamente utilizado na culinária, especialmente na Amazônia, onde é adicionado a pratos para dar cor e sabor. Além disso, é usado por comunidades indígenas para tintura de pele e roupas.</p>
+
+        <h2>Cuidados</h2>
+        <ul>
+            <li>Prefere locais ensolarados e solo bem drenado.</li>
+            <li>É uma planta resistente, mas requer regas regulares em períodos secos.</li>
+            <li>Pode ser cultivada em jardins ou vasos grandes, e precisa de espaço para se desenvolver.</li>
+        </ul>
     </section>
 
     <div class="plant-button">

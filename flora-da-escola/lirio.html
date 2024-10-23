@@ -4,84 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lírio - Flora da Escola</title>
-    <link rel="stylesheet" href="styles-planta.css">
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+        header {
+            width: 100%;
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
 
-header {
-    width: 100%;
-    background-color: #2c3e50;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-}
+        header h1 {
+            font-size: 28px;
+        }
 
-header h1 {
-    font-size: 28px;
-}
+        .plant-info {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: 20px;
+            width: 80%;
+        }
 
-header p {
-    font-size: 16px;
-    margin-top: 5px;
-}
+        .plant-image {
+            display: flex;
+            gap: 10px;
+        }
 
-.plant-list {
-    width: 80%;
-    margin: 20px 0;
-}
+        .plant-image img {
+            max-height: 400px;
+            width: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
 
-.plant-button {
-    margin: 10px 0;
-    width: 100%;
-    background-color: #3498db;
-    border-radius: 5px;
-    text-align: center;
-}
+        .plant-details {
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
 
-.plant-button a {
-    display: block;
-    padding: 15px;
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    width: 100%;
-}
+        .rest-info {
+            margin-top: 20px;
+            width: 80%;
+        }
 
-.plant-button a:hover {
-    background-color: #2980b9;
-}
+        .plant-button {
+            margin-top: 20px;
+            background-color: #3498db;
+            border-radius: 5px;
+            text-align: center;
+        }
 
-footer {
-    width: 100%;
-    background-color: #2c3e50;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
-    position: fixed;
-    bottom: 0;
-}
+        .plant-button a {
+            display: block;
+            padding: 15px;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            width: 100%;
+        }
 
+        .plant-button a:hover {
+            background-color: #2980b9;
+        }
 
-
-
+        footer {
+            width: 100%;
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
     </style>
-
-
 </head>
 <body>
     <header>
@@ -90,7 +101,8 @@ footer {
 
     <section class="plant-info">
         <div class="plant-image">
-            <img src="imagens/lirio.jpg" alt="Lírio">
+            <img src="conteudo/Lirio.jpg" alt="Lírio">
+            <img src="conteudo/foto internet/lirio-internet.png" alt="Imagem da Internet - Lírio">
         </div>
 
         <div class="plant-details">
@@ -99,28 +111,33 @@ footer {
             <p><strong>Nome popular:</strong> Lírio</p>
             <p><strong>Família:</strong> Liliaceae</p>
             <p><strong>Origem:</strong> Hemisfério Norte (Europa, Ásia e América do Norte)</p>
-            
-
-            <h2>Características</h2>
-            <ul>
-                <li>Flores grandes, geralmente com pétalas curvadas.</li>
-                <li>Disponíveis em diversas cores, como branco, rosa, amarelo, e laranja.</li>
-                <li>Floresce durante a primavera e o verão.</li>
-                <li>Possui um aroma agradável e doce.</li>
-                <li>Altura entre 60 cm e 1,5 metros, dependendo da variedade.</li>
-            </ul>
-
-            <h2>Curiosidades</h2>
-            <p>Os lírios são conhecidos por seu simbolismo, representando pureza, renovação e transição. São amplamente utilizados em arranjos florais e têm valor ornamental.</p>
-
-            <h2>Cuidados</h2>
-            <ul>
-                <li>Solo bem drenado e rico em matéria orgânica.</li>
-                <li>Luz solar direta ou parcial.</li>
-                <li>Rega regular, mas sem encharcar o solo.</li>
-            </ul>
         </div>
     </section>
+
+    <section class="rest-info">
+        <h2>Características</h2>
+        <ul>
+            <li>Flores grandes, geralmente com pétalas curvadas.</li>
+            <li>Disponíveis em diversas cores, como branco, rosa, amarelo, e laranja.</li>
+            <li>Floresce durante a primavera e o verão.</li>
+            <li>Possui um aroma agradável e doce.</li>
+            <li>Altura entre 60 cm e 1,5 metros, dependendo da variedade.</li>
+        </ul>
+
+        <h2>Curiosidades</h2>
+        <p>Os lírios são conhecidos por seu simbolismo, representando pureza, renovação e transição. São amplamente utilizados em arranjos florais e têm valor ornamental.</p>
+
+        <h2>Cuidados</h2>
+        <ul>
+            <li>Solo bem drenado e rico em matéria orgânica.</li>
+            <li>Luz solar direta ou parcial.</li>
+            <li>Rega regular, mas sem encharcar o solo.</li>
+        </ul>
+    </section>
+
+    <div class="plant-button">
+        <a href="index.html">Voltar ao Index</a>
+    </div>
 
     <footer>
         <p>Flora da Escola - 2024</p>

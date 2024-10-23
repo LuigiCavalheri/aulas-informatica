@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abacaxi-roxo - Flora da Escola</title>
-    <link rel="stylesheet" href="styles-planta.css">
     <style>
         * {
             margin: 0;
@@ -32,19 +31,40 @@
             font-size: 28px;
         }
 
-        header p {
-            font-size: 16px;
-            margin-top: 5px;
+        .plant-info {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: 20px;
+            width: 80%;
         }
 
-        .plant-list {
+        .plant-image {
+            display: flex;
+            gap: 20px; /* Espaçamento entre as imagens */
+        }
+
+        .plant-image img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .plant-details {
+            margin-left: 20px; /* Ajusta a distância mínima entre as imagens e o texto */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Centraliza o texto verticalmente em relação às imagens */
+        }
+
+        .rest-info {
+            margin-top: 20px;
             width: 80%;
-            margin: 20px 0;
         }
 
         .plant-button {
-            margin: 10px 0;
-            width: 100%;
+            margin-top: 20px;
             background-color: #3498db;
             border-radius: 5px;
             text-align: center;
@@ -71,20 +91,19 @@
             text-align: center;
             padding: 10px;
             margin-top: 20px;
-            position: fixed;
-            bottom: 0;
         }
-
     </style>
 </head>
 <body>
+
     <header>
-        <h1>Abacaxi-roxo (Cryptanthus) </h1>
+        <h1>Abacaxi-roxo (Cryptanthus)</h1>
     </header>
 
     <section class="plant-info">
         <div class="plant-image">
-            <img src="imagens/abacaxi-roxo.jpg" alt="Abacaxi-roxo">
+            <img src="conteudo/abacaxi roxo.jpg" alt="Abacaxi Roxo">
+            <img src="conteudo/foto internet/abacaxiroxo-internet.png" alt="Imagem da Internet - Abacaxi Roxo">
         </div>
 
         <div class="plant-details">
@@ -93,25 +112,27 @@
             <p><strong>Nome popular:</strong> Abacaxi-roxo</p>
             <p><strong>Família:</strong> Bromeliaceae</p>
             <p><strong>Origem:</strong> Florestas tropicais da América do Sul.</p>
-
-            <h2>Características</h2>
-            <ul>
-                <li>Planta de porte baixo, geralmente não ultrapassando 30 cm de altura.</li>
-                <li>Folhas longas, em forma de roseta, com coloração que varia entre verde, roxo e vermelho.</li>
-                <li>Produz pequenas flores brancas ou amarelas, mas a planta é mais valorizada pela sua folhagem decorativa.</li>
-                <li>Ideal para cultivo em ambientes internos e jardins sombreados.</li>
-            </ul>
-
-            <h2>Curiosidades</h2>
-            <p>O abacaxi-roxo é conhecido por sua beleza exótica e é muito utilizado em arranjos decorativos. É uma planta que se adapta bem em ambientes fechados, ajudando a purificar o ar.</p>
-
-            <h2>Cuidados</h2>
-            <ul>
-                <li>Prefere luz indireta e ambientes úmidos.</li>
-                <li>O solo deve ser bem drenado; uma mistura para bromélias é ideal.</li>
-                <li>A rega deve ser moderada, evitando o acúmulo de água na roseta das folhas.</li>
-            </ul>
         </div>
+    </section>
+
+    <section class="rest-info">
+        <h2>Características</h2>
+        <ul>
+            <li>Planta de porte baixo, geralmente não ultrapassando 30 cm de altura.</li>
+            <li>Folhas longas, em forma de roseta, com coloração que varia entre verde, roxo e vermelho.</li>
+            <li>Produz pequenas flores brancas ou amarelas, mas a planta é mais valorizada pela sua folhagem decorativa.</li>
+            <li>Ideal para cultivo em ambientes internos e jardins sombreados.</li>
+        </ul>
+
+        <h2>Curiosidades</h2>
+        <p>O abacaxi-roxo é conhecido por sua beleza exótica e é muito utilizado em arranjos decorativos. É uma planta que se adapta bem em ambientes fechados, ajudando a purificar o ar.</p>
+
+        <h2>Cuidados</h2>
+        <ul>
+            <li>Prefere luz indireta e ambientes úmidos.</li>
+            <li>O solo deve ser bem drenado; uma mistura para bromélias é ideal.</li>
+            <li>A rega deve ser moderada, evitando o acúmulo de água na roseta das folhas.</li>
+        </ul>
     </section>
 
     <div class="plant-button">
@@ -121,5 +142,6 @@
     <footer>
         <p>Flora da Escola - 2024</p>
     </footer>
+
 </body>
 </html>

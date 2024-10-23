@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grama Batatais - Flora da Escola</title>
-    <link rel="stylesheet" href="styles-planta.css">
     <style>
         * {
             margin: 0;
@@ -32,19 +31,40 @@
             font-size: 28px;
         }
 
-        header p {
-            font-size: 16px;
-            margin-top: 5px;
+        .plant-info {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: 20px;
+            width: 80%;
         }
 
-        .plant-list {
+        .plant-image {
+            display: flex;
+            gap: 10px;
+        }
+
+        .plant-image img {
+            max-height: 400px;
+            width: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .plant-details {
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .rest-info {
+            margin-top: 20px;
             width: 80%;
-            margin: 20px 0;
         }
 
         .plant-button {
-            margin: 10px 0;
-            width: 100%;
+            margin-top: 20px;
             background-color: #3498db;
             border-radius: 5px;
             text-align: center;
@@ -71,20 +91,19 @@
             text-align: center;
             padding: 10px;
             margin-top: 20px;
-            position: fixed;
-            bottom: 0;
         }
-
     </style>
 </head>
 <body>
+
     <header>
         <h1>Grama Batatais (Paspalum notatum)</h1>
     </header>
 
     <section class="plant-info">
         <div class="plant-image">
-            <img src="imagens/grama-batatais.jpg" alt="Grama Batatais">
+            <img src="conteudo/Grama batatais.jpg" alt="Grama Batatais">
+            <img src="conteudo/foto internet/gramabatatais-internet.jpg" alt="Imagem da Internet - Grama Batatais">
         </div>
 
         <div class="plant-details">
@@ -93,25 +112,27 @@
             <p><strong>Nome popular:</strong> Grama Batatais</p>
             <p><strong>Família:</strong> Poaceae</p>
             <p><strong>Origem:</strong> América do Sul</p>
-
-            <h2>Características</h2>
-            <ul>
-                <li>Planta herbácea perene, formando um gramado denso e resistente.</li>
-                <li>Possui folhas largas e macias, que proporcionam uma textura agradável.</li>
-                <li>É altamente resistente ao pisoteio, tornando-a ideal para áreas de lazer e jardins.</li>
-                <li>Apresenta um crescimento rápido e requer manutenção mínima.</li>
-            </ul>
-
-            <h2>Curiosidades</h2>
-            <p>A Grama Batatais é muito utilizada em campos de golfe, parques e jardins residenciais devido à sua resistência e aparência estética. Além disso, é uma planta que ajuda na conservação do solo.</p>
-
-            <h2>Cuidados</h2>
-            <ul>
-                <li>Preferencialmente cultivada em solo bem drenado e rico em nutrientes.</li>
-                <li>Requer rega regular, especialmente em períodos de seca.</li>
-                <li>A manutenção, como a poda e a adubação, é importante para manter sua saúde e beleza.</li>
-            </ul>
         </div>
+    </section>
+
+    <section class="rest-info">
+        <h2>Características</h2>
+        <ul>
+            <li>Planta herbácea perene, formando um gramado denso e resistente.</li>
+            <li>Possui folhas largas e macias, que proporcionam uma textura agradável.</li>
+            <li>É altamente resistente ao pisoteio, tornando-a ideal para áreas de lazer e jardins.</li>
+            <li>Apresenta um crescimento rápido e requer manutenção mínima.</li>
+        </ul>
+
+        <h2>Curiosidades</h2>
+        <p>A Grama Batatais é muito utilizada em campos de golfe, parques e jardins residenciais devido à sua resistência e aparência estética. Além disso, é uma planta que ajuda na conservação do solo.</p>
+
+        <h2>Cuidados</h2>
+        <ul>
+            <li>Preferencialmente cultivada em solo bem drenado e rico em nutrientes.</li>
+            <li>Requer rega regular, especialmente em períodos de seca.</li>
+            <li>A manutenção, como a poda e a adubação, é importante para manter sua saúde e beleza.</li>
+        </ul>
     </section>
 
     <div class="plant-button">
@@ -121,5 +142,6 @@
     <footer>
         <p>Flora da Escola - 2024</p>
     </footer>
+
 </body>
 </html>

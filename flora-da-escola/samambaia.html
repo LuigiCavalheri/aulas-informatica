@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samambaia - Flora da Escola</title>
-    <link rel="stylesheet" href="styles-planta.css">
     <style>
         * {
             margin: 0;
@@ -32,19 +31,40 @@
             font-size: 28px;
         }
 
-        header p {
-            font-size: 16px;
-            margin-top: 5px;
+        .plant-info {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: 20px;
+            width: 80%;
         }
 
-        .plant-list {
+        .plant-image {
+            display: flex;
+            gap: 10px;
+        }
+
+        .plant-image img {
+            max-height: 400px;
+            width: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .plant-details {
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .rest-info {
+            margin-top: 20px;
             width: 80%;
-            margin: 20px 0;
         }
 
         .plant-button {
-            margin: 10px 0;
-            width: 100%;
+            margin-top: 20px;
             background-color: #3498db;
             border-radius: 5px;
             text-align: center;
@@ -71,10 +91,7 @@
             text-align: center;
             padding: 10px;
             margin-top: 20px;
-            position: fixed;
-            bottom: 0;
         }
-
     </style>
 </head>
 <body>
@@ -84,7 +101,8 @@
 
     <section class="plant-info">
         <div class="plant-image">
-            <img src="imagens/samambaia.jpg" alt="Samambaia">
+            <img src="conteudo/Samambaia.jpg" alt="Samambaia">
+            <img src="conteudo/foto internet/samambaia-internet.png" alt="Samambaia - Imagem da Internet">
         </div>
 
         <div class="plant-details">
@@ -93,25 +111,27 @@
             <p><strong>Nome popular:</strong> Samambaia</p>
             <p><strong>Família:</strong> Lomariopsidaceae</p>
             <p><strong>Origem:</strong> Regiões tropicais e subtropicais do mundo.</p>
-
-            <h2>Características</h2>
-            <ul>
-                <li>Folhagem exuberante, com folhas verdes e longas, que podem atingir até 1 metro de comprimento.</li>
-                <li>Forma uma "copa" com suas folhas, criando um visual denso e atraente.</li>
-                <li>Prefere ambientes úmidos e sombreados.</li>
-                <li>Possui rizomas subterrâneos que permitem a propagação da planta.</li>
-            </ul>
-
-            <h2>Curiosidades</h2>
-            <p>A samambaia é uma planta muito popular em decoração de interiores e jardins. Ela é conhecida por sua capacidade de purificar o ar, tornando-se uma excelente opção para ambientes fechados.</p>
-
-            <h2>Cuidados</h2>
-            <ul>
-                <li>Prefere solo bem drenado e rico em matéria orgânica.</li>
-                <li>A rega deve ser frequente, mantendo o solo úmido, mas sem encharcar.</li>
-                <li>Evitar a luz solar direta, pois pode queimar as folhas.</li>
-            </ul>
         </div>
+    </section>
+
+    <section class="rest-info">
+        <h2>Características</h2>
+        <ul>
+            <li>Folhagem exuberante, com folhas verdes e longas, que podem atingir até 1 metro de comprimento.</li>
+            <li>Forma uma "copa" com suas folhas, criando um visual denso e atraente.</li>
+            <li>Prefere ambientes úmidos e sombreados.</li>
+            <li>Possui rizomas subterrâneos que permitem a propagação da planta.</li>
+        </ul>
+
+        <h2>Curiosidades</h2>
+        <p>A samambaia é uma planta muito popular em decoração de interiores e jardins. Ela é conhecida por sua capacidade de purificar o ar, tornando-se uma excelente opção para ambientes fechados.</p>
+
+        <h2>Cuidados</h2>
+        <ul>
+            <li>Prefere solo bem drenado e rico em matéria orgânica.</li>
+            <li>A rega deve ser frequente, mantendo o solo úmido, mas sem encharcar.</li>
+            <li>Evitar a luz solar direta, pois pode queimar as folhas.</li>
+        </ul>
     </section>
 
     <div class="plant-button">

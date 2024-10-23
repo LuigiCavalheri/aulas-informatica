@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Espada de São Jorge Mini - Flora da Escola</title>
-    <link rel="stylesheet" href="styles-planta.css">
     <style>
         * {
             margin: 0;
@@ -32,19 +31,40 @@
             font-size: 28px;
         }
 
-        header p {
-            font-size: 16px;
-            margin-top: 5px;
+        .plant-info {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: 20px;
+            width: 80%;
         }
 
-        .plant-list {
+        .plant-image {
+            display: flex;
+            gap: 20px;
+        }
+
+        .plant-image img {
+            max-height: 400px;
+            width: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .plant-details {
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .rest-info {
+            margin-top: 20px;
             width: 80%;
-            margin: 20px 0;
         }
 
         .plant-button {
-            margin: 10px 0;
-            width: 100%;
+            margin-top: 20px;
             background-color: #3498db;
             border-radius: 5px;
             text-align: center;
@@ -71,20 +91,19 @@
             text-align: center;
             padding: 10px;
             margin-top: 20px;
-            position: fixed;
-            bottom: 0;
         }
-
     </style>
 </head>
 <body>
+
     <header>
         <h1>Espada de São Jorge Mini (Sansevieria trifasciata 'Hahnii')</h1>
     </header>
 
     <section class="plant-info">
         <div class="plant-image">
-            <img src="imagens/espada-de-sao-jorge-mini.jpg" alt="Espada de São Jorge Mini">
+            <img src="conteudo/Espada de São Jorge mini.jpg" alt="Espada de São Jorge Mini">
+            <img src="conteudo/foto internet/espadadesaojorgemini-internet.jpg" alt="Imagem da Internet - Espada de São Jorge Mini">
         </div>
 
         <div class="plant-details">
@@ -93,34 +112,36 @@
             <p><strong>Nome popular:</strong> Espada de São Jorge Mini</p>
             <p><strong>Família:</strong> Asparagaceae</p>
             <p><strong>Origem:</strong> África tropical</p>
-
-            <h2>Características</h2>
-            <ul>
-                <li>Variedade compacta da Espada de São Jorge, com folhas curtas e em forma de roseta.</li>
-                <li>As folhas são de coloração verde, com listras mais claras, e podem ter bordas amarelas.</li>
-                <li>Alcança uma altura de até 30 cm, sendo ideal para pequenos espaços.</li>
-                <li>Produz flores raramente, mas quando floresce, as flores são brancas ou amarelas.</li>
-            </ul>
-
-            <h2>Curiosidades</h2>
-            <p>A Espada de São Jorge Mini é muito apreciada como planta de interior, devido ao seu tamanho compacto e facilidade de cuidados. É também considerada uma planta que traz proteção e sorte.</p>
-
-            <h2>Cuidados</h2>
-            <ul>
-                <li>Solo bem drenado, podendo ser uma mistura para cactos e suculentas.</li>
-                <li>Prefere luz indireta, mas também se adapta bem a ambientes com pouca luz.</li>
-                <li>Rega esporádica, permitindo que o solo seque completamente entre as regas.</li>
-            </ul>
         </div>
+    </section>
+
+    <section class="rest-info">
+        <h2>Características</h2>
+        <ul>
+            <li>Variedade compacta da Espada de São Jorge, com folhas curtas e em forma de roseta.</li>
+            <li>As folhas são de coloração verde, com listras mais claras, e podem ter bordas amarelas.</li>
+            <li>Alcança uma altura de até 30 cm, sendo ideal para pequenos espaços.</li>
+            <li>Produz flores raramente, mas quando floresce, as flores são brancas ou amarelas.</li>
+        </ul>
+
+        <h2>Curiosidades</h2>
+        <p>A Espada de São Jorge Mini é muito apreciada como planta de interior, devido ao seu tamanho compacto e facilidade de cuidados. É também considerada uma planta que traz proteção e sorte.</p>
+
+        <h2>Cuidados</h2>
+        <ul>
+            <li>Solo bem drenado, podendo ser uma mistura para cactos e suculentas.</li>
+            <li>Prefere luz indireta, mas também se adapta bem a ambientes com pouca luz.</li>
+            <li>Rega esporádica, permitindo que o solo seque completamente entre as regas.</li>
+        </ul>
     </section>
 
     <div class="plant-button">
         <a href="index.html">Voltar ao Index</a>
     </div>
 
-
     <footer>
         <p>Flora da Escola - 2024</p>
     </footer>
+
 </body>
 </html>

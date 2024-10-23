@@ -32,19 +32,40 @@
             font-size: 28px;
         }
 
-        header p {
-            font-size: 16px;
-            margin-top: 5px;
+        .plant-info {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: 20px;
+            width: 80%;
         }
 
-        .plant-list {
+        .plant-image {
+            display: flex;
+            gap: 10px;
+        }
+
+        .plant-image img {
+            max-height: 400px;
+            width: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .plant-details {
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .rest-info {
+            margin-top: 20px;
             width: 80%;
-            margin: 20px 0;
         }
 
         .plant-button {
-            margin: 10px 0;
-            width: 100%;
+            margin-top: 20px;
             background-color: #3498db;
             border-radius: 5px;
             text-align: center;
@@ -71,10 +92,7 @@
             text-align: center;
             padding: 10px;
             margin-top: 20px;
-            position: fixed;
-            bottom: 0;
         }
-
     </style>
 </head>
 <body>
@@ -84,7 +102,8 @@
 
     <section class="plant-info">
         <div class="plant-image">
-            <img src="imagens/vinca.jpg" alt="Vinca">
+            <img src="conteudo/Vinca.jpg" alt="Vinca">
+            <img src="conteudo/foto internet/vinca-internet.png" alt="Vinca - Imagem da Internet">
         </div>
 
         <div class="plant-details">
@@ -93,25 +112,27 @@
             <p><strong>Nome popular:</strong> Vinca</p>
             <p><strong>Família:</strong> Apocynaceae</p>
             <p><strong>Origem:</strong> Madagascar e outras regiões tropicais.</p>
-
-            <h2>Características</h2>
-            <ul>
-                <li>Planta herbácea que pode atingir até 1 metro de altura.</li>
-                <li>Folhas opostas, de formato ovalado e verde escuro.</li>
-                <li>Flores em forma de estrela, que podem ser brancas, rosa ou roxas, geralmente com um centro mais escuro.</li>
-                <li>É uma planta resistente, que floresce durante quase todo o ano em climas adequados.</li>
-            </ul>
-
-            <h2>Curiosidades</h2>
-            <p>A Vinca é conhecida por suas propriedades medicinais e é utilizada na medicina tradicional para tratar diversas doenças. Ela também é popular na jardinagem por sua beleza e facilidade de cultivo.</p>
-
-            <h2>Cuidados</h2>
-            <ul>
-                <li>Prefere solos bem drenados e rico em matéria orgânica.</li>
-                <li>Requer luz solar direta a parcial; a falta de luz pode reduzir a floração.</li>
-                <li>A rega deve ser moderada; é importante evitar o encharcamento do solo.</li>
-            </ul>
         </div>
+    </section>
+
+    <section class="rest-info">
+        <h2>Características</h2>
+        <ul>
+            <li>Planta herbácea que pode atingir até 1 metro de altura.</li>
+            <li>Folhas opostas, de formato ovalado e verde escuro.</li>
+            <li>Flores em forma de estrela, que podem ser brancas, rosa ou roxas, geralmente com um centro mais escuro.</li>
+            <li>É uma planta resistente, que floresce durante quase todo o ano em climas adequados.</li>
+        </ul>
+
+        <h2>Curiosidades</h2>
+        <p>A Vinca é conhecida por suas propriedades medicinais e é utilizada na medicina tradicional para tratar diversas doenças. Ela também é popular na jardinagem por sua beleza e facilidade de cultivo.</p>
+
+        <h2>Cuidados</h2>
+        <ul>
+            <li>Prefere solos bem drenados e rico em matéria orgânica.</li>
+            <li>Requer luz solar direta a parcial; a falta de luz pode reduzir a floração.</li>
+            <li>A rega deve ser moderada; é importante evitar o encharcamento do solo.</li>
+        </ul>
     </section>
 
     <div class="plant-button">

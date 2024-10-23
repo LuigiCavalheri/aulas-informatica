@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rosa - Flora da Escola</title>
-    <link rel="stylesheet" href="styles-planta.css">
     <style>
         * {
             margin: 0;
@@ -32,19 +31,40 @@
             font-size: 28px;
         }
 
-        header p {
-            font-size: 16px;
-            margin-top: 5px;
+        .plant-info {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: 20px;
+            width: 80%;
         }
 
-        .plant-list {
+        .plant-image {
+            display: flex;
+            gap: 10px;
+        }
+
+        .plant-image img {
+            max-height: 400px;
+            width: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .plant-details {
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .rest-info {
+            margin-top: 20px;
             width: 80%;
-            margin: 20px 0;
         }
 
         .plant-button {
-            margin: 10px 0;
-            width: 100%;
+            margin-top: 20px;
             background-color: #3498db;
             border-radius: 5px;
             text-align: center;
@@ -71,10 +91,7 @@
             text-align: center;
             padding: 10px;
             margin-top: 20px;
-            position: fixed;
-            bottom: 0;
         }
-
     </style>
 </head>
 <body>
@@ -84,7 +101,8 @@
 
     <section class="plant-info">
         <div class="plant-image">
-            <img src="imagens/rosa.jpg" alt="Rosa">
+            <img src="conteudo/Rosa.jpg" alt="Rosa">
+            <img src="conteudo/foto internet/rosa-internet.png" alt="Rosa - Imagem da Internet">
         </div>
 
         <div class="plant-details">
@@ -93,25 +111,27 @@
             <p><strong>Nome popular:</strong> Rosa</p>
             <p><strong>Família:</strong> Rosaceae</p>
             <p><strong>Origem:</strong> Diversas regiões do mundo, cultivada em várias culturas.</p>
-
-            <h2>Características</h2>
-            <ul>
-                <li>Planta arbustiva, que pode variar em altura de 30 cm a 2 metros, dependendo da espécie.</li>
-                <li>Flores grandes e vistosas, disponíveis em várias cores, como vermelho, rosa, branco e amarelo.</li>
-                <li>Folhas compostas, geralmente verdes e com bordas serrilhadas.</li>
-                <li>Frutos são pequenos e redondos, conhecidos como "hipés".</li>
-            </ul>
-
-            <h2>Curiosidades</h2>
-            <p>A rosa é um dos símbolos mais conhecidos de amor e carinho, frequentemente utilizada em buquês e decorações. Ela possui também importância cultural e medicinal em várias sociedades.</p>
-
-            <h2>Cuidados</h2>
-            <ul>
-                <li>Prefere locais ensolarados com pelo menos 6 horas de sol por dia.</li>
-                <li>O solo deve ser bem drenado e rico em nutrientes.</li>
-                <li>A rega deve ser moderada, evitando encharcamento.</li>
-            </ul>
         </div>
+    </section>
+
+    <section class="rest-info">
+        <h2>Características</h2>
+        <ul>
+            <li>Planta arbustiva, que pode variar em altura de 30 cm a 2 metros, dependendo da espécie.</li>
+            <li>Flores grandes e vistosas, disponíveis em várias cores, como vermelho, rosa, branco e amarelo.</li>
+            <li>Folhas compostas, geralmente verdes e com bordas serrilhadas.</li>
+            <li>Frutos são pequenos e redondos, conhecidos como "hipés".</li>
+        </ul>
+
+        <h2>Curiosidades</h2>
+        <p>A rosa é um dos símbolos mais conhecidos de amor e carinho, frequentemente utilizada em buquês e decorações. Ela possui também importância cultural e medicinal em várias sociedades.</p>
+
+        <h2>Cuidados</h2>
+        <ul>
+            <li>Prefere locais ensolarados com pelo menos 6 horas de sol por dia.</li>
+            <li>O solo deve ser bem drenado e rico em nutrientes.</li>
+            <li>A rega deve ser moderada, evitando encharcamento.</li>
+        </ul>
     </section>
 
     <div class="plant-button">

@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cambará - Flora da Escola</title>
-    <link rel="stylesheet" href="styles-planta.css">
     <style>
         * {
             margin: 0;
@@ -32,19 +31,40 @@
             font-size: 28px;
         }
 
-        header p {
-            font-size: 16px;
-            margin-top: 5px;
+        .plant-info {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: 20px;
+            width: 80%;
         }
 
-        .plant-list {
+        .plant-image {
+            display: flex;
+            gap: 20px;
+        }
+
+        .plant-image img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .plant-details {
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .rest-info {
+            margin-top: 20px;
             width: 80%;
-            margin: 20px 0;
         }
 
         .plant-button {
-            margin: 10px 0;
-            width: 100%;
+            margin-top: 20px;
             background-color: #3498db;
             border-radius: 5px;
             text-align: center;
@@ -71,20 +91,19 @@
             text-align: center;
             padding: 10px;
             margin-top: 20px;
-            position: fixed;
-            bottom: 0;
         }
-
     </style>
 </head>
 <body>
+
     <header>
         <h1>Cambará (Stryphnodendron adstringens)</h1>
     </header>
 
     <section class="plant-info">
         <div class="plant-image">
-            <img src="imagens/cambara.jpg" alt="Cambará">
+            <img src="conteudo/cambará.jpg" alt="Cambará">
+            <img src="conteudo/foto internet/cambara-internet.jpg" alt="Imagem da Internet - Cambará">
         </div>
 
         <div class="plant-details">
@@ -93,34 +112,36 @@
             <p><strong>Nome popular:</strong> Cambará</p>
             <p><strong>Família:</strong> Fabaceae</p>
             <p><strong>Origem:</strong> Brasil</p>
-
-            <h2>Características</h2>
-            <ul>
-                <li>Árvore de médio a grande porte, podendo atingir até 20 metros de altura.</li>
-                <li>Folhas compostas e alternadas, com coloração verde brilhante.</li>
-                <li>Flores pequenas, de coloração amarelo-esverdeada, reunidas em inflorescências.</li>
-                <li>Produz frutos em forma de vagem, que contêm sementes duras.</li>
-            </ul>
-
-            <h2>Curiosidades</h2>
-            <p>O Cambará é conhecido por suas propriedades medicinais, sendo utilizado em chás e extratos para tratar problemas digestivos e inflamações. Sua madeira é também valorizada, sendo utilizada na construção e em móveis.</p>
-
-            <h2>Cuidados</h2>
-            <ul>
-                <li>Solo bem drenado e rico em nutrientes.</li>
-                <li>Prefere locais ensolarados e quentes.</li>
-                <li>Rega moderada, evitando o encharcamento do solo.</li>
-            </ul>
         </div>
+    </section>
+
+    <section class="rest-info">
+        <h2>Características</h2>
+        <ul>
+            <li>Árvore de médio a grande porte, podendo atingir até 20 metros de altura.</li>
+            <li>Folhas compostas e alternadas, com coloração verde brilhante.</li>
+            <li>Flores pequenas, de coloração amarelo-esverdeada, reunidas em inflorescências.</li>
+            <li>Produz frutos em forma de vagem, que contêm sementes duras.</li>
+        </ul>
+
+        <h2>Curiosidades</h2>
+        <p>O Cambará é conhecido por suas propriedades medicinais, sendo utilizado em chás e extratos para tratar problemas digestivos e inflamações. Sua madeira é também valorizada, sendo utilizada na construção e em móveis.</p>
+
+        <h2>Cuidados</h2>
+        <ul>
+            <li>Solo bem drenado e rico em nutrientes.</li>
+            <li>Prefere locais ensolarados e quentes.</li>
+            <li>Rega moderada, evitando o encharcamento do solo.</li>
+        </ul>
     </section>
 
     <div class="plant-button">
         <a href="index.html">Voltar ao Index</a>
     </div>
 
-
     <footer>
         <p>Flora da Escola - 2024</p>
     </footer>
+
 </body>
 </html>

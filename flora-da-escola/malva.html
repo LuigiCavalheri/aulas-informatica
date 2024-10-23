@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Malva - Flora da Escola</title>
-    <link rel="stylesheet" href="styles-planta.css">
     <style>
         * {
             margin: 0;
@@ -32,19 +31,40 @@
             font-size: 28px;
         }
 
-        header p {
-            font-size: 16px;
-            margin-top: 5px;
+        .plant-info {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: 20px;
+            width: 80%;
         }
 
-        .plant-list {
+        .plant-image {
+            display: flex;
+            gap: 10px;
+        }
+
+        .plant-image img {
+            max-height: 400px;
+            width: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .plant-details {
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .rest-info {
+            margin-top: 20px;
             width: 80%;
-            margin: 20px 0;
         }
 
         .plant-button {
-            margin: 10px 0;
-            width: 100%;
+            margin-top: 20px;
             background-color: #3498db;
             border-radius: 5px;
             text-align: center;
@@ -71,10 +91,7 @@
             text-align: center;
             padding: 10px;
             margin-top: 20px;
-            position: fixed;
-            bottom: 0;
         }
-
     </style>
 </head>
 <body>
@@ -84,7 +101,8 @@
 
     <section class="plant-info">
         <div class="plant-image">
-            <img src="imagens/malva.jpg" alt="Malva">
+            <img src="conteudo/malva.jpg" alt="Malva">
+            <img src="conteudo/foto internet/malva-internet.png" alt="Imagem da Internet - Malva">
         </div>
 
         <div class="plant-details">
@@ -93,25 +111,27 @@
             <p><strong>Nome popular:</strong> Malva</p>
             <p><strong>Família:</strong> Malvaceae</p>
             <p><strong>Origem:</strong> Europa, Ásia e Norte da África</p>
-
-            <h2>Características</h2>
-            <ul>
-                <li>Planta herbácea que pode atingir até 1,5 metros de altura.</li>
-                <li>Flores grandes, com pétalas de cor rosa a roxa, com um centro mais escuro.</li>
-                <li>Folhas arredondadas e dentadas, cobertas por pelos finos.</li>
-                <li>Produz frutos pequenos em forma de disco, que se separam facilmente quando maduros.</li>
-            </ul>
-
-            <h2>Curiosidades</h2>
-            <p>A Malva é conhecida por suas propriedades medicinais e é utilizada em chás e pomadas para tratar problemas respiratórios e inflamações. Além disso, suas flores são comestíveis e podem ser usadas em saladas.</p>
-
-            <h2>Cuidados</h2>
-            <ul>
-                <li>Prefere solos férteis e bem drenados.</li>
-                <li>Gosta de luz solar direta, mas pode tolerar sombra parcial.</li>
-                <li>A rega deve ser moderada, evitando o encharcamento do solo.</li>
-            </ul>
         </div>
+    </section>
+
+    <section class="rest-info">
+        <h2>Características</h2>
+        <ul>
+            <li>Planta herbácea que pode atingir até 1,5 metros de altura.</li>
+            <li>Flores grandes, com pétalas de cor rosa a roxa, com um centro mais escuro.</li>
+            <li>Folhas arredondadas e dentadas, cobertas por pelos finos.</li>
+            <li>Produz frutos pequenos em forma de disco, que se separam facilmente quando maduros.</li>
+        </ul>
+
+        <h2>Curiosidades</h2>
+        <p>A Malva é conhecida por suas propriedades medicinais e é utilizada em chás e pomadas para tratar problemas respiratórios e inflamações. Além disso, suas flores são comestíveis e podem ser usadas em saladas.</p>
+
+        <h2>Cuidados</h2>
+        <ul>
+            <li>Prefere solos férteis e bem drenados.</li>
+            <li>Gosta de luz solar direta, mas pode tolerar sombra parcial.</li>
+            <li>A rega deve ser moderada, evitando o encharcamento do solo.</li>
+        </ul>
     </section>
 
     <div class="plant-button">

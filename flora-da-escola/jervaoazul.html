@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jervão Azul - Flora da Escola</title>
-    <link rel="stylesheet" href="styles-planta.css">
     <style>
         * {
             margin: 0;
@@ -32,19 +31,40 @@
             font-size: 28px;
         }
 
-        header p {
-            font-size: 16px;
-            margin-top: 5px;
+        .plant-info {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: 20px;
+            width: 80%;
         }
 
-        .plant-list {
+        .plant-image {
+            display: flex;
+            gap: 10px;
+        }
+
+        .plant-image img {
+            max-height: 400px;
+            width: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .plant-details {
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .rest-info {
+            margin-top: 20px;
             width: 80%;
-            margin: 20px 0;
         }
 
         .plant-button {
-            margin: 10px 0;
-            width: 100%;
+            margin-top: 20px;
             background-color: #3498db;
             border-radius: 5px;
             text-align: center;
@@ -71,20 +91,19 @@
             text-align: center;
             padding: 10px;
             margin-top: 20px;
-            position: fixed;
-            bottom: 0;
         }
-
     </style>
 </head>
 <body>
+
     <header>
         <h1>Jervão Azul (Evolvulus glomeratus)</h1>
     </header>
 
     <section class="plant-info">
         <div class="plant-image">
-            <img src="imagens/jervao-azul.jpg" alt="Jervão Azul">
+            <img src="conteudo/Jervão azul.jpg" alt="Jervão Azul">
+            <img src="conteudo/foto internet/jervaoazul-internet.jpg" alt="Imagem da Internet - Jervão Azul">
         </div>
 
         <div class="plant-details">
@@ -93,25 +112,27 @@
             <p><strong>Nome popular:</strong> Jervão Azul</p>
             <p><strong>Família:</strong> Convolvulaceae</p>
             <p><strong>Origem:</strong> América do Sul (Brasil e países vizinhos)</p>
-
-            <h2>Características</h2>
-            <ul>
-                <li>Planta herbácea perene com hábito rasteiro, ideal para cobertura de solo.</li>
-                <li>Flores pequenas, de cor azul intensa, que aparecem durante a primavera e o verão.</li>
-                <li>Folhas ovaladas e verde-escuras, que conferem um bonito contraste com as flores.</li>
-                <li>É uma planta bastante resistente e de fácil cultivo, sendo ideal para jardins e vasos.</li>
-            </ul>
-
-            <h2>Curiosidades</h2>
-            <p>O Jervão Azul é popular em jardins por sua floração duradoura e pela capacidade de atrair polinizadores, como abelhas e borboletas. É também conhecido por seu efeito decorativo em bordaduras e como forração.</p>
-
-            <h2>Cuidados</h2>
-            <ul>
-                <li>Prefere solo bem drenado e pode tolerar diferentes tipos de solo, desde que não seja encharcado.</li>
-                <li>Requer luz solar plena para um crescimento saudável e abundante floração.</li>
-                <li>A rega deve ser regular, mas com cautela para evitar o acúmulo de água.</li>
-            </ul>
         </div>
+    </section>
+
+    <section class="rest-info">
+        <h2>Características</h2>
+        <ul>
+            <li>Planta herbácea perene com hábito rasteiro, ideal para cobertura de solo.</li>
+            <li>Flores pequenas, de cor azul intensa, que aparecem durante a primavera e o verão.</li>
+            <li>Folhas ovaladas e verde-escuras, que conferem um bonito contraste com as flores.</li>
+            <li>É uma planta bastante resistente e de fácil cultivo, sendo ideal para jardins e vasos.</li>
+        </ul>
+
+        <h2>Curiosidades</h2>
+        <p>O Jervão Azul é popular em jardins por sua floração duradoura e pela capacidade de atrair polinizadores, como abelhas e borboletas. É também conhecido por seu efeito decorativo em bordaduras e como forração.</p>
+
+        <h2>Cuidados</h2>
+        <ul>
+            <li>Prefere solo bem drenado e pode tolerar diferentes tipos de solo, desde que não seja encharcado.</li>
+            <li>Requer luz solar plena para um crescimento saudável e abundante floração.</li>
+            <li>A rega deve ser regular, mas com cautela para evitar o acúmulo de água.</li>
+        </ul>
     </section>
 
     <div class="plant-button">
@@ -121,5 +142,6 @@
     <footer>
         <p>Flora da Escola - 2024</p>
     </footer>
+
 </body>
 </html>

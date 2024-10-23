@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cravo-do-mato - Flora da Escola</title>
-    <link rel="stylesheet" href="styles-planta.css">
     <style>
         * {
             margin: 0;
@@ -32,19 +31,40 @@
             font-size: 28px;
         }
 
-        header p {
-            font-size: 16px;
-            margin-top: 5px;
+        .plant-info {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: 20px;
+            width: 80%;
         }
 
-        .plant-list {
+        .plant-image {
+            display: flex;
+            gap: 20px;
+        }
+
+        .plant-image img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .plant-details {
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .rest-info {
+            margin-top: 20px;
             width: 80%;
-            margin: 20px 0;
         }
 
         .plant-button {
-            margin: 10px 0;
-            width: 100%;
+            margin-top: 20px;
             background-color: #3498db;
             border-radius: 5px;
             text-align: center;
@@ -71,20 +91,19 @@
             text-align: center;
             padding: 10px;
             margin-top: 20px;
-            position: fixed;
-            bottom: 0;
         }
-
     </style>
 </head>
 <body>
+
     <header>
-        <h1>Cravo-do-mato (Clove of the field)</h1>
+        <h1>Cravo-do-mato (Syzygium aromaticum)</h1>
     </header>
 
     <section class="plant-info">
         <div class="plant-image">
-            <img src="imagens/cravo-do-mato.jpg" alt="Cravo-do-mato">
+            <img src="conteudo/cravo do mato.jpg" alt="Cravo do Mato">
+            <img src="conteudo/foto internet/cravodomato-internet.jpg" alt="Imagem da Internet - Cravo do Mato">
         </div>
 
         <div class="plant-details">
@@ -93,25 +112,27 @@
             <p><strong>Nome popular:</strong> Cravo-do-mato</p>
             <p><strong>Família:</strong> Myrtaceae</p>
             <p><strong>Origem:</strong> Indonésia, embora seja cultivado em várias partes do mundo.</p>
-
-            <h2>Características</h2>
-            <ul>
-                <li>Arbusto ou pequena árvore, que pode atingir até 12 metros de altura.</li>
-                <li>Folhas opostas, ovais e de coloração verde-escura, com aroma característico.</li>
-                <li>Flores pequenas, de cor branca, agrupadas em inflorescências.</li>
-                <li>Frutos em forma de botão, que são colhidos e secos para produção de cravo.</li>
-            </ul>
-
-            <h2>Curiosidades</h2>
-            <p>O Cravo-do-mato é amplamente utilizado como tempero e na indústria de perfumes devido ao seu aroma forte e sabor intenso. Também possui propriedades medicinais, sendo usado em remédios caseiros para diversas condições.</p>
-
-            <h2>Cuidados</h2>
-            <ul>
-                <li>Prefere solo bem drenado e rico em matéria orgânica.</li>
-                <li>Deve ser cultivada em locais ensolarados, com proteção contra ventos fortes.</li>
-                <li>A rega deve ser regular, evitando encharcamento.</li>
-            </ul>
         </div>
+    </section>
+
+    <section class="rest-info">
+        <h2>Características</h2>
+        <ul>
+            <li>Arbusto ou pequena árvore, que pode atingir até 12 metros de altura.</li>
+            <li>Folhas opostas, ovais e de coloração verde-escura, com aroma característico.</li>
+            <li>Flores pequenas, de cor branca, agrupadas em inflorescências.</li>
+            <li>Frutos em forma de botão, que são colhidos e secos para produção de cravo.</li>
+        </ul>
+
+        <h2>Curiosidades</h2>
+        <p>O Cravo-do-mato é amplamente utilizado como tempero e na indústria de perfumes devido ao seu aroma forte e sabor intenso. Também possui propriedades medicinais, sendo usado em remédios caseiros para diversas condições.</p>
+
+        <h2>Cuidados</h2>
+        <ul>
+            <li>Prefere solo bem drenado e rico em matéria orgânica.</li>
+            <li>Deve ser cultivada em locais ensolarados, com proteção contra ventos fortes.</li>
+            <li>A rega deve ser regular, evitando encharcamento.</li>
+        </ul>
     </section>
 
     <div class="plant-button">
@@ -121,5 +142,6 @@
     <footer>
         <p>Flora da Escola - 2024</p>
     </footer>
+
 </body>
 </html>

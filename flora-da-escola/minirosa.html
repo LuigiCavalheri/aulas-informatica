@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini Rosa - Flora da Escola</title>
-    <link rel="stylesheet" href="styles-planta.css">
     <style>
         * {
             margin: 0;
@@ -32,19 +31,40 @@
             font-size: 28px;
         }
 
-        header p {
-            font-size: 16px;
-            margin-top: 5px;
+        .plant-info {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: 20px;
+            width: 80%;
         }
 
-        .plant-list {
+        .plant-image {
+            display: flex;
+            gap: 10px;
+        }
+
+        .plant-image img {
+            max-height: 400px;
+            width: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .plant-details {
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .rest-info {
+            margin-top: 20px;
             width: 80%;
-            margin: 20px 0;
         }
 
         .plant-button {
-            margin: 10px 0;
-            width: 100%;
+            margin-top: 20px;
             background-color: #3498db;
             border-radius: 5px;
             text-align: center;
@@ -71,10 +91,7 @@
             text-align: center;
             padding: 10px;
             margin-top: 20px;
-            position: fixed;
-            bottom: 0;
         }
-
     </style>
 </head>
 <body>
@@ -84,7 +101,8 @@
 
     <section class="plant-info">
         <div class="plant-image">
-            <img src="imagens/mini-rosa.jpg" alt="Mini Rosa">
+            <img src="conteudo/Mini rosa.jpg" alt="Mini Rosa">
+            <img src="conteudo/foto internet/minirosa-internet.png" alt="Imagem da Internet - Mini Rosa">
         </div>
 
         <div class="plant-details">
@@ -93,25 +111,27 @@
             <p><strong>Nome popular:</strong> Mini Rosa</p>
             <p><strong>Família:</strong> Rosaceae</p>
             <p><strong>Origem:</strong> Diversas regiões do mundo, com variedades cultivadas globalmente.</p>
-
-            <h2>Características</h2>
-            <ul>
-                <li>Planta compacta, geralmente atingindo entre 30 cm a 60 cm de altura.</li>
-                <li>Flores pequenas e exuberantes, disponíveis em diversas cores, como vermelho, rosa, amarelo e branco.</li>
-                <li>Folhas verdes escuras, com bordas serrilhadas.</li>
-                <li>Floração abundante, com várias flores surgindo simultaneamente.</li>
-            </ul>
-
-            <h2>Curiosidades</h2>
-            <p>A Mini Rosa é uma variedade muito popular em jardins e como planta de interior. Seu tamanho compacto a torna ideal para vasos e pequenos espaços. Além disso, as rosas são símbolo de amor e amizade.</p>
-
-            <h2>Cuidados</h2>
-            <ul>
-                <li>Prefere luz solar direta, mas pode tolerar sombra parcial.</li>
-                <li>Solo bem drenado e rico em matéria orgânica é essencial.</li>
-                <li>Rega regular, evitando o encharcamento do solo.</li>
-            </ul>
         </div>
+    </section>
+
+    <section class="rest-info">
+        <h2>Características</h2>
+        <ul>
+            <li>Planta compacta, geralmente atingindo entre 30 cm a 60 cm de altura.</li>
+            <li>Flores pequenas e exuberantes, disponíveis em diversas cores, como vermelho, rosa, amarelo e branco.</li>
+            <li>Folhas verdes escuras, com bordas serrilhadas.</li>
+            <li>Floração abundante, com várias flores surgindo simultaneamente.</li>
+        </ul>
+
+        <h2>Curiosidades</h2>
+        <p>A Mini Rosa é uma variedade muito popular em jardins e como planta de interior. Seu tamanho compacto a torna ideal para vasos e pequenos espaços. Além disso, as rosas são símbolo de amor e amizade.</p>
+
+        <h2>Cuidados</h2>
+        <ul>
+            <li>Prefere luz solar direta, mas pode tolerar sombra parcial.</li>
+            <li>Solo bem drenado e rico em matéria orgânica é essencial.</li>
+            <li>Rega regular, evitando o encharcamento do solo.</li>
+        </ul>
     </section>
 
     <div class="plant-button">

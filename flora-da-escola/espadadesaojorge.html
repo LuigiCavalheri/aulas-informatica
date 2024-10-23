@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Espada de São Jorge - Flora da Escola</title>
-    <link rel="stylesheet" href="styles-planta.css">
     <style>
         * {
             margin: 0;
@@ -32,19 +31,40 @@
             font-size: 28px;
         }
 
-        header p {
-            font-size: 16px;
-            margin-top: 5px;
+        .plant-info {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: 20px;
+            width: 80%;
         }
 
-        .plant-list {
+        .plant-image {
+            display: flex;
+            gap: 20px;
+        }
+
+        .plant-image img {
+            max-height: 400px;
+            width: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .plant-details {
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .rest-info {
+            margin-top: 20px;
             width: 80%;
-            margin: 20px 0;
         }
 
         .plant-button {
-            margin: 10px 0;
-            width: 100%;
+            margin-top: 20px;
             background-color: #3498db;
             border-radius: 5px;
             text-align: center;
@@ -71,20 +91,19 @@
             text-align: center;
             padding: 10px;
             margin-top: 20px;
-            position: fixed;
-            bottom: 0;
         }
-
     </style>
 </head>
 <body>
+
     <header>
         <h1>Espada de São Jorge (Sansevieria trifasciata)</h1>
     </header>
 
     <section class="plant-info">
         <div class="plant-image">
-            <img src="imagens/espada-de-sao-jorge.jpg" alt="Espada de São Jorge">
+            <img src="conteudo/Espada de São Jorge .jpg" alt="Espada de São Jorge">
+            <img src="conteudo/foto internet/espadadesaojorge-internet.jpg" alt="Imagem da Internet - Espada de São Jorge">
         </div>
 
         <div class="plant-details">
@@ -93,34 +112,36 @@
             <p><strong>Nome popular:</strong> Espada de São Jorge</p>
             <p><strong>Família:</strong> Asparagaceae</p>
             <p><strong>Origem:</strong> África tropical e subtropical</p>
-
-            <h2>Características</h2>
-            <ul>
-                <li>Planta suculenta com folhas longas, rígidas e em forma de espada, que podem atingir até 1 metro de altura.</li>
-                <li>As folhas são de coloração verde com listras em tons mais claros, podendo ter bordas amarelas em algumas variedades.</li>
-                <li>É uma planta bastante resistente, tolerante a diferentes condições de luz e solo.</li>
-                <li>Raramente produz flores em ambientes internos, mas quando floresce, produz flores brancas ou amarelas em cachos.</li>
-            </ul>
-
-            <h2>Curiosidades</h2>
-            <p>A Espada de São Jorge é conhecida por suas propriedades purificadoras do ar e pela crença de que traz proteção contra energias negativas. É uma planta popular em jardins e ambientes internos.</p>
-
-            <h2>Cuidados</h2>
-            <ul>
-                <li>Solo bem drenado, podendo ser uma mistura para cactos e suculentas.</li>
-                <li>Prefere luz indireta, mas tolera sombra e luz direta por curtos períodos.</li>
-                <li>Rega esporádica, permitindo que o solo seque completamente entre as regas.</li>
-            </ul>
         </div>
+    </section>
+
+    <section class="rest-info">
+        <h2>Características</h2>
+        <ul>
+            <li>Planta suculenta com folhas longas, rígidas e em forma de espada, que podem atingir até 1 metro de altura.</li>
+            <li>As folhas são de coloração verde com listras em tons mais claros, podendo ter bordas amarelas em algumas variedades.</li>
+            <li>É uma planta bastante resistente, tolerante a diferentes condições de luz e solo.</li>
+            <li>Raramente produz flores em ambientes internos, mas quando floresce, produz flores brancas ou amarelas em cachos.</li>
+        </ul>
+
+        <h2>Curiosidades</h2>
+        <p>A Espada de São Jorge é conhecida por suas propriedades purificadoras do ar e pela crença de que traz proteção contra energias negativas. É uma planta popular em jardins e ambientes internos.</p>
+
+        <h2>Cuidados</h2>
+        <ul>
+            <li>Solo bem drenado, podendo ser uma mistura para cactos e suculentas.</li>
+            <li>Prefere luz indireta, mas tolera sombra e luz direta por curtos períodos.</li>
+            <li>Rega esporádica, permitindo que o solo seque completamente entre as regas.</li>
+        </ul>
     </section>
 
     <div class="plant-button">
         <a href="index.html">Voltar ao Index</a>
     </div>
 
-
     <footer>
         <p>Flora da Escola - 2024</p>
     </footer>
+
 </body>
 </html>

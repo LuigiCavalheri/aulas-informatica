@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ipê Branco - Flora da Escola</title>
-    <link rel="stylesheet" href="styles-planta.css">
     <style>
         * {
             margin: 0;
@@ -32,19 +31,40 @@
             font-size: 28px;
         }
 
-        header p {
-            font-size: 16px;
-            margin-top: 5px;
+        .plant-info {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: 20px;
+            width: 80%;
         }
 
-        .plant-list {
+        .plant-image {
+            display: flex;
+            gap: 10px;
+        }
+
+        .plant-image img {
+            max-height: 400px;
+            width: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .plant-details {
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .rest-info {
+            margin-top: 20px;
             width: 80%;
-            margin: 20px 0;
         }
 
         .plant-button {
-            margin: 10px 0;
-            width: 100%;
+            margin-top: 20px;
             background-color: #3498db;
             border-radius: 5px;
             text-align: center;
@@ -71,20 +91,19 @@
             text-align: center;
             padding: 10px;
             margin-top: 20px;
-            position: fixed;
-            bottom: 0;
         }
-
     </style>
 </head>
 <body>
+
     <header>
         <h1>Ipê Branco (Tabebuia roseoalba)</h1>
     </header>
 
     <section class="plant-info">
         <div class="plant-image">
-            <img src="imagens/ipe-branco.jpg" alt="Ipê Branco">
+            <img src="conteudo/Ipe branco.jpg" alt="Ipê Branco">
+            <img src="conteudo/foto internet/ipebranco-internet.jpg" alt="Imagem da Internet - Ipê Branco">
         </div>
 
         <div class="plant-details">
@@ -93,25 +112,27 @@
             <p><strong>Nome popular:</strong> Ipê Branco</p>
             <p><strong>Família:</strong> Bignoniaceae</p>
             <p><strong>Origem:</strong> América do Sul (principalmente Brasil)</p>
-
-            <h2>Características</h2>
-            <ul>
-                <li>Árvore de grande porte, podendo atingir até 30 metros de altura.</li>
-                <li>Flores brancas e aromáticas, que surgem na época da floração, geralmente entre agosto e setembro.</li>
-                <li>Folhas compostas e caducas, que caem durante o período de seca.</li>
-                <li>Possui um tronco reto e cilíndrico, com casca fina e escamosa.</li>
-            </ul>
-
-            <h2>Curiosidades</h2>
-            <p>O Ipê Branco é conhecido por sua beleza e pelo espetáculo de suas flores, que cobrem a árvore em um manto branco. É considerado símbolo da biodiversidade e é amplamente utilizado em paisagismo e reflorestamento.</p>
-
-            <h2>Cuidados</h2>
-            <ul>
-                <li>Prefere solo bem drenado e rico em nutrientes.</li>
-                <li>Necessita de luz solar direta para um crescimento saudável.</li>
-                <li>A rega deve ser moderada, evitando o encharcamento do solo.</li>
-            </ul>
         </div>
+    </section>
+
+    <section class="rest-info">
+        <h2>Características</h2>
+        <ul>
+            <li>Árvore de grande porte, podendo atingir até 30 metros de altura.</li>
+            <li>Flores brancas e aromáticas, que surgem na época da floração, geralmente entre agosto e setembro.</li>
+            <li>Folhas compostas e caducas, que caem durante o período de seca.</li>
+            <li>Possui um tronco reto e cilíndrico, com casca fina e escamosa.</li>
+        </ul>
+
+        <h2>Curiosidades</h2>
+        <p>O Ipê Branco é conhecido por sua beleza e pelo espetáculo de suas flores, que cobrem a árvore em um manto branco. É considerado símbolo da biodiversidade e é amplamente utilizado em paisagismo e reflorestamento.</p>
+
+        <h2>Cuidados</h2>
+        <ul>
+            <li>Prefere solo bem drenado e rico em nutrientes.</li>
+            <li>Necessita de luz solar direta para um crescimento saudável.</li>
+            <li>A rega deve ser moderada, evitando o encharcamento do solo.</li>
+        </ul>
     </section>
 
     <div class="plant-button">
@@ -121,5 +142,6 @@
     <footer>
         <p>Flora da Escola - 2024</p>
     </footer>
+
 </body>
 </html>

@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orquídea - Flora da Escola</title>
-    <link rel="stylesheet" href="styles-planta.css">
     <style>
         * {
             margin: 0;
@@ -32,19 +31,40 @@
             font-size: 28px;
         }
 
-        header p {
-            font-size: 16px;
-            margin-top: 5px;
+        .plant-info {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: 20px;
+            width: 80%;
         }
 
-        .plant-list {
+        .plant-image {
+            display: flex;
+            gap: 10px;
+        }
+
+        .plant-image img {
+            max-height: 400px;
+            width: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .plant-details {
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .rest-info {
+            margin-top: 20px;
             width: 80%;
-            margin: 20px 0;
         }
 
         .plant-button {
-            margin: 10px 0;
-            width: 100%;
+            margin-top: 20px;
             background-color: #3498db;
             border-radius: 5px;
             text-align: center;
@@ -71,10 +91,7 @@
             text-align: center;
             padding: 10px;
             margin-top: 20px;
-            position: fixed;
-            bottom: 0;
         }
-
     </style>
 </head>
 <body>
@@ -84,7 +101,8 @@
 
     <section class="plant-info">
         <div class="plant-image">
-            <img src="imagens/orquidea.jpg" alt="Orquídea">
+            <img src="conteudo/Orquídea.jpg" alt="Orquídea">
+            <img src="conteudo/foto internet/orquidea-internet.png" alt="Segunda imagem da Orquídea">
         </div>
 
         <div class="plant-details">
@@ -93,25 +111,27 @@
             <p><strong>Nome popular:</strong> Orquídea</p>
             <p><strong>Família:</strong> Orchidaceae</p>
             <p><strong>Origem:</strong> Espalhada por todo o mundo, especialmente em regiões tropicais e subtropicais.</p>
-
-            <h2>Características</h2>
-            <ul>
-                <li>Plantas herbáceas com uma grande diversidade de formas e tamanhos.</li>
-                <li>Flores de cores vibrantes, que podem ser pequenas ou muito grandes, dependendo da espécie.</li>
-                <li>Possuem simetria bilateral e são frequentemente polinizadas por insetos específicos.</li>
-                <li>Folhas geralmente largas e ovais, algumas espécies são epífitas, crescendo em árvores.</li>
-            </ul>
-
-            <h2>Curiosidades</h2>
-            <p>As orquídeas são uma das maiores famílias de plantas com flores, com mais de 25.000 espécies descritas. Elas simbolizam amor, beleza e força. Além disso, algumas espécies têm aromas agradáveis e são utilizadas na perfumaria.</p>
-
-            <h2>Cuidados</h2>
-            <ul>
-                <li>Preferem ambientes com luz indireta e alta umidade.</li>
-                <li>O solo deve ser bem drenado, geralmente utilizando casca de pinheiro ou substrato específico para orquídeas.</li>
-                <li>A rega deve ser moderada, permitindo que o solo seque entre as regas.</li>
-            </ul>
         </div>
+    </section>
+
+    <section class="rest-info">
+        <h2>Características</h2>
+        <ul>
+            <li>Plantas herbáceas com uma grande diversidade de formas e tamanhos.</li>
+            <li>Flores de cores vibrantes, que podem ser pequenas ou muito grandes, dependendo da espécie.</li>
+            <li>Possuem simetria bilateral e são frequentemente polinizadas por insetos específicos.</li>
+            <li>Folhas geralmente largas e ovais, algumas espécies são epífitas, crescendo em árvores.</li>
+        </ul>
+
+        <h2>Curiosidades</h2>
+        <p>As orquídeas são uma das maiores famílias de plantas com flores, com mais de 25.000 espécies descritas. Elas simbolizam amor, beleza e força. Além disso, algumas espécies têm aromas agradáveis e são utilizadas na perfumaria.</p>
+
+        <h2>Cuidados</h2>
+        <ul>
+            <li>Preferem ambientes com luz indireta e alta umidade.</li>
+            <li>O solo deve ser bem drenado, geralmente utilizando casca de pinheiro ou substrato específico para orquídeas.</li>
+            <li>A rega deve ser moderada, permitindo que o solo seque entre as regas.</li>
+        </ul>
     </section>
 
     <div class="plant-button">

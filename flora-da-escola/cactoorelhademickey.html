@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cacto Orelha de Mickey - Flora da Escola</title>
-    <link rel="stylesheet" href="styles-planta.css">
     <style>
         * {
             margin: 0;
@@ -32,19 +31,40 @@
             font-size: 28px;
         }
 
-        header p {
-            font-size: 16px;
-            margin-top: 5px;
+        .plant-info {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: 20px;
+            width: 80%;
         }
 
-        .plant-list {
+        .plant-image {
+            display: flex;
+            gap: 20px;
+        }
+
+        .plant-image img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .plant-details {
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .rest-info {
+            margin-top: 20px;
             width: 80%;
-            margin: 20px 0;
         }
 
         .plant-button {
-            margin: 10px 0;
-            width: 100%;
+            margin-top: 20px;
             background-color: #3498db;
             border-radius: 5px;
             text-align: center;
@@ -71,20 +91,19 @@
             text-align: center;
             padding: 10px;
             margin-top: 20px;
-            position: fixed;
-            bottom: 0;
         }
-
     </style>
 </head>
 <body>
+
     <header>
         <h1>Cacto Orelha de Mickey (Opuntia microdasys)</h1>
     </header>
 
     <section class="plant-info">
         <div class="plant-image">
-            <img src="imagens/cacto-orelha-de-mickey.jpg" alt="Cacto Orelha de Mickey">
+            <img src="conteudo/Cacto orelha de Mickey.jpg" alt="Cacto Orelha de Mickey">
+            <img src="conteudo/foto internet/cactoorelhademickey-internet.jpg" alt="Imagem da Internet - Cacto Orelha de Mickey">
         </div>
 
         <div class="plant-details">
@@ -93,34 +112,36 @@
             <p><strong>Nome popular:</strong> Cacto Orelha de Mickey</p>
             <p><strong>Família:</strong> Cactaceae</p>
             <p><strong>Origem:</strong> México</p>
-
-            <h2>Características</h2>
-            <ul>
-                <li>Cacto de porte pequeno a médio, com ramos achatados em forma de orelhas.</li>
-                <li>Possui gloquídeos, pequenos espinhos finos e delicados, que podem causar irritação na pele.</li>
-                <li>Floresce na primavera e verão, com flores amarelas brilhantes.</li>
-                <li>É muito popular como planta ornamental, tanto em vasos quanto em jardins de cactos.</li>
-            </ul>
-
-            <h2>Curiosidades</h2>
-            <p>O nome popular "Orelha de Mickey" vem do formato característico de suas hastes, que lembram as orelhas do famoso personagem de desenho animado. Este cacto é muito resistente e fácil de cuidar, sendo uma ótima opção para iniciantes no cultivo de plantas suculentas.</p>
-
-            <h2>Cuidados</h2>
-            <ul>
-                <li>Prefere solos bem drenados e arenosos.</li>
-                <li>Necessita de luz solar direta para crescer saudável.</li>
-                <li>Rega esporádica, apenas quando o solo estiver completamente seco.</li>
-            </ul>
         </div>
+    </section>
+
+    <section class="rest-info">
+        <h2>Características</h2>
+        <ul>
+            <li>Cacto de porte pequeno a médio, com ramos achatados em forma de orelhas.</li>
+            <li>Possui gloquídeos, pequenos espinhos finos e delicados, que podem causar irritação na pele.</li>
+            <li>Floresce na primavera e verão, com flores amarelas brilhantes.</li>
+            <li>É muito popular como planta ornamental, tanto em vasos quanto em jardins de cactos.</li>
+        </ul>
+
+        <h2>Curiosidades</h2>
+        <p>O nome popular "Orelha de Mickey" vem do formato característico de suas hastes, que lembram as orelhas do famoso personagem de desenho animado. Este cacto é muito resistente e fácil de cuidar, sendo uma ótima opção para iniciantes no cultivo de plantas suculentas.</p>
+
+        <h2>Cuidados</h2>
+        <ul>
+            <li>Prefere solos bem drenados e arenosos.</li>
+            <li>Necessita de luz solar direta para crescer saudável.</li>
+            <li>Rega esporádica, apenas quando o solo estiver completamente seco.</li>
+        </ul>
     </section>
 
     <div class="plant-button">
         <a href="index.html">Voltar ao Index</a>
     </div>
 
-
     <footer>
         <p>Flora da Escola - 2024</p>
     </footer>
+
 </body>
 </html>

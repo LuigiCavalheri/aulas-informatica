@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cipó Flor de São João - Flora da Escola</title>
-    <link rel="stylesheet" href="styles-planta.css">
     <style>
         * {
             margin: 0;
@@ -32,19 +31,40 @@
             font-size: 28px;
         }
 
-        header p {
-            font-size: 16px;
-            margin-top: 5px;
+        .plant-info {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: 20px;
+            width: 80%;
         }
 
-        .plant-list {
+        .plant-image {
+            display: flex;
+            gap: 20px;
+        }
+
+        .plant-image img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .plant-details {
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .rest-info {
+            margin-top: 20px;
             width: 80%;
-            margin: 20px 0;
         }
 
         .plant-button {
-            margin: 10px 0;
-            width: 100%;
+            margin-top: 20px;
             background-color: #3498db;
             border-radius: 5px;
             text-align: center;
@@ -71,20 +91,19 @@
             text-align: center;
             padding: 10px;
             margin-top: 20px;
-            position: fixed;
-            bottom: 0;
         }
-
     </style>
 </head>
 <body>
+
     <header>
         <h1>Cipó Flor de São João (Arrabidaea chica)</h1>
     </header>
 
     <section class="plant-info">
         <div class="plant-image">
-            <img src="imagens/cipo-flor-de-sao-joao.jpg" alt="Cipó Flor de São João">
+            <img src="conteudo/Cipó flor de São João .jpg" alt="Cipó Flor de São João">
+            <img src="conteudo/foto internet/cipoflordesaojoao-internet.jpg" alt="Imagem da Internet - Cipó Flor de São João">
         </div>
 
         <div class="plant-details">
@@ -93,34 +112,36 @@
             <p><strong>Nome popular:</strong> Cipó Flor de São João</p>
             <p><strong>Família:</strong> Bignoniaceae</p>
             <p><strong>Origem:</strong> América do Sul</p>
-
-            <h2>Características</h2>
-            <ul>
-                <li>Cipó trepador que pode atingir até 10 metros de altura.</li>
-                <li>Folhas alternadas, compostas, e de coloração verde intensa.</li>
-                <li>Flores grandes, em tons de amarelo e laranja, que atraem polinizadores.</li>
-                <li>Frutos em forma de cápsula que se abrem ao amadurecer, liberando sementes.</li>
-            </ul>
-
-            <h2>Curiosidades</h2>
-            <p>A flor de São João é conhecida por suas propriedades medicinais e é utilizada em chás e infusões. É popular na medicina tradicional para o tratamento de diversos problemas de saúde, incluindo doenças respiratórias e inflamações.</p>
-
-            <h2>Cuidados</h2>
-            <ul>
-                <li>Solo fértil e bem drenado.</li>
-                <li>Prefere luz solar direta ou sombra parcial.</li>
-                <li>Rega regular, mantendo o solo levemente úmido, mas sem encharcar.</li>
-            </ul>
         </div>
+    </section>
+
+    <section class="rest-info">
+        <h2>Características</h2>
+        <ul>
+            <li>Cipó trepador que pode atingir até 10 metros de altura.</li>
+            <li>Folhas alternadas, compostas, e de coloração verde intensa.</li>
+            <li>Flores grandes, em tons de amarelo e laranja, que atraem polinizadores.</li>
+            <li>Frutos em forma de cápsula que se abrem ao amadurecer, liberando sementes.</li>
+        </ul>
+
+        <h2>Curiosidades</h2>
+        <p>A flor de São João é conhecida por suas propriedades medicinais e é utilizada em chás e infusões. É popular na medicina tradicional para o tratamento de diversos problemas de saúde, incluindo doenças respiratórias e inflamações.</p>
+
+        <h2>Cuidados</h2>
+        <ul>
+            <li>Solo fértil e bem drenado.</li>
+            <li>Prefere luz solar direta ou sombra parcial.</li>
+            <li>Rega regular, mantendo o solo levemente úmido, mas sem encharcar.</li>
+        </ul>
     </section>
 
     <div class="plant-button">
         <a href="index.html">Voltar ao Index</a>
     </div>
 
-
     <footer>
         <p>Flora da Escola - 2024</p>
     </footer>
+
 </body>
 </html>

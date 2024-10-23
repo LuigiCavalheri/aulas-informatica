@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dinheiro em Penca - Flora da Escola</title>
-    <link rel="stylesheet" href="styles-planta.css">
     <style>
         * {
             margin: 0;
@@ -32,19 +31,40 @@
             font-size: 28px;
         }
 
-        header p {
-            font-size: 16px;
-            margin-top: 5px;
+        .plant-info {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: 20px;
+            width: 80%;
         }
 
-        .plant-list {
+        .plant-image {
+            display: flex;
+            gap: 20px;
+        }
+
+        .plant-image img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .plant-details {
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .rest-info {
+            margin-top: 20px;
             width: 80%;
-            margin: 20px 0;
         }
 
         .plant-button {
-            margin: 10px 0;
-            width: 100%;
+            margin-top: 20px;
             background-color: #3498db;
             border-radius: 5px;
             text-align: center;
@@ -71,20 +91,19 @@
             text-align: center;
             padding: 10px;
             margin-top: 20px;
-            position: fixed;
-            bottom: 0;
         }
-
     </style>
 </head>
 <body>
+
     <header>
         <h1>Dinheiro em Penca (Plectranthus verticillatus)</h1>
     </header>
 
     <section class="plant-info">
         <div class="plant-image">
-            <img src="imagens/dinheiro-em-penca.jpg" alt="Dinheiro em Penca">
+            <img src="conteudo/Dinheiro em penca_mil folhas.jpg" alt="Dinheiro em Penca/Mil Folhas">
+            <img src="conteudo/foto internet/dinheiroempenca-internet.jpg" alt="Imagem da Internet - Dinheiro em Penca">
         </div>
 
         <div class="plant-details">
@@ -93,34 +112,36 @@
             <p><strong>Nome popular:</strong> Dinheiro em Penca</p>
             <p><strong>Família:</strong> Lamiaceae</p>
             <p><strong>Origem:</strong> África do Sul</p>
-
-            <h2>Características</h2>
-            <ul>
-                <li>Planta herbácea perene, que pode atingir de 30 cm a 1 metro de altura.</li>
-                <li>Folhas suculentas, arredondadas e de coloração verde-escura.</li>
-                <li>Flores pequenas, em forma de espigas, geralmente de coloração lilás ou branca.</li>
-                <li>É frequentemente utilizada em jardins e como planta de interior.</li>
-            </ul>
-
-            <h2>Curiosidades</h2>
-            <p>O nome "Dinheiro em Penca" se deve à crença popular de que a planta atrai prosperidade e fortuna. É comum encontrar essa planta em lares e estabelecimentos comerciais como um símbolo de boa sorte.</p>
-
-            <h2>Cuidados</h2>
-            <ul>
-                <li>Solo bem drenado, rico em matéria orgânica.</li>
-                <li>Prefere luz indireta ou sombra parcial.</li>
-                <li>Rega moderada, permitindo que o solo seque entre as regas.</li>
-            </ul>
         </div>
+    </section>
+
+    <section class="rest-info">
+        <h2>Características</h2>
+        <ul>
+            <li>Planta herbácea perene, que pode atingir de 30 cm a 1 metro de altura.</li>
+            <li>Folhas suculentas, arredondadas e de coloração verde-escura.</li>
+            <li>Flores pequenas, em forma de espigas, geralmente de coloração lilás ou branca.</li>
+            <li>É frequentemente utilizada em jardins e como planta de interior.</li>
+        </ul>
+
+        <h2>Curiosidades</h2>
+        <p>O nome "Dinheiro em Penca" se deve à crença popular de que a planta atrai prosperidade e fortuna. É comum encontrar essa planta em lares e estabelecimentos comerciais como um símbolo de boa sorte.</p>
+
+        <h2>Cuidados</h2>
+        <ul>
+            <li>Solo bem drenado, rico em matéria orgânica.</li>
+            <li>Prefere luz indireta ou sombra parcial.</li>
+            <li>Rega moderada, permitindo que o solo seque entre as regas.</li>
+        </ul>
     </section>
 
     <div class="plant-button">
         <a href="index.html">Voltar ao Index</a>
     </div>
 
-
     <footer>
         <p>Flora da Escola - 2024</p>
     </footer>
+
 </body>
 </html>

@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assa-peixe - Flora da Escola</title>
-    <link rel="stylesheet" href="styles-planta.css">
     <style>
         * {
             margin: 0;
@@ -32,19 +31,40 @@
             font-size: 28px;
         }
 
-        header p {
-            font-size: 16px;
-            margin-top: 5px;
+        .plant-info {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: 20px;
+            width: 80%;
         }
 
-        .plant-list {
+        .plant-image {
+            display: flex;
+            gap: 20px;
+        }
+
+        .plant-image img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .plant-details {
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .rest-info {
+            margin-top: 20px;
             width: 80%;
-            margin: 20px 0;
         }
 
         .plant-button {
-            margin: 10px 0;
-            width: 100%;
+            margin-top: 20px;
             background-color: #3498db;
             border-radius: 5px;
             text-align: center;
@@ -71,20 +91,19 @@
             text-align: center;
             padding: 10px;
             margin-top: 20px;
-            position: fixed;
-            bottom: 0;
         }
-
     </style>
 </head>
 <body>
+
     <header>
         <h1>Assa-peixe (Vernonia polysphaera)</h1>
     </header>
 
     <section class="plant-info">
         <div class="plant-image">
-            <img src="imagens/assa-peixe.jpg" alt="Assa-peixe">
+            <img src="conteudo/Assa peixe.jpg" alt="Assa Peixe">
+            <img src="conteudo/foto internet/assapeixe-internet.jpg" alt="Imagem da Internet - Assa Peixe">
         </div>
 
         <div class="plant-details">
@@ -93,34 +112,36 @@
             <p><strong>Nome popular:</strong> Assa-peixe</p>
             <p><strong>Família:</strong> Asteraceae</p>
             <p><strong>Origem:</strong> Brasil</p>
-
-            <h2>Características</h2>
-            <ul>
-                <li>Arbusto perene, podendo atingir de 2 a 5 metros de altura.</li>
-                <li>Folhas grandes, ovaladas e ásperas, com textura que lembra o veludo.</li>
-                <li>Flores brancas em inflorescências, atraindo abelhas e outros polinizadores.</li>
-                <li>Amplamente encontrado em áreas de campo e cerrado.</li>
-            </ul>
-
-            <h2>Curiosidades</h2>
-            <p>O Assa-peixe é uma planta medicinal bastante conhecida no Brasil. Seu chá é utilizado no tratamento de problemas respiratórios, como gripes, resfriados e bronquites. Além disso, as flores da planta são uma excelente fonte de néctar para a produção de mel, conhecido como mel de assa-peixe.</p>
-
-            <h2>Cuidados</h2>
-            <ul>
-                <li>Solo arenoso e bem drenado.</li>
-                <li>Prefere sol pleno e ambientes abertos.</li>
-                <li>Rega moderada, tolerando bem períodos de seca.</li>
-            </ul>
         </div>
+    </section>
+
+    <section class="rest-info">
+        <h2>Características</h2>
+        <ul>
+            <li>Arbusto perene, podendo atingir de 2 a 5 metros de altura.</li>
+            <li>Folhas grandes, ovaladas e ásperas, com textura que lembra o veludo.</li>
+            <li>Flores brancas em inflorescências, atraindo abelhas e outros polinizadores.</li>
+            <li>Amplamente encontrado em áreas de campo e cerrado.</li>
+        </ul>
+
+        <h2>Curiosidades</h2>
+        <p>O Assa-peixe é uma planta medicinal bastante conhecida no Brasil. Seu chá é utilizado no tratamento de problemas respiratórios, como gripes, resfriados e bronquites. Além disso, as flores da planta são uma excelente fonte de néctar para a produção de mel, conhecido como mel de assa-peixe.</p>
+
+        <h2>Cuidados</h2>
+        <ul>
+            <li>Solo arenoso e bem drenado.</li>
+            <li>Prefere sol pleno e ambientes abertos.</li>
+            <li>Rega moderada, tolerando bem períodos de seca.</li>
+        </ul>
     </section>
 
     <div class="plant-button">
         <a href="index.html">Voltar ao Index</a>
     </div>
 
-
     <footer>
         <p>Flora da Escola - 2024</p>
     </footer>
+
 </body>
 </html>

@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orlatão Lammel - Flora da Escola</title>
-    <link rel="stylesheet" href="styles-planta.css">
     <style>
         * {
             margin: 0;
@@ -32,19 +31,40 @@
             font-size: 28px;
         }
 
-        header p {
-            font-size: 16px;
-            margin-top: 5px;
+        .plant-info {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: 20px;
+            width: 80%;
         }
 
-        .plant-list {
+        .plant-image {
+            display: flex;
+            gap: 10px;
+        }
+
+        .plant-image img {
+            max-height: 400px;
+            width: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .plant-details {
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .rest-info {
+            margin-top: 20px;
             width: 80%;
-            margin: 20px 0;
         }
 
         .plant-button {
-            margin: 10px 0;
-            width: 100%;
+            margin-top: 20px;
             background-color: #3498db;
             border-radius: 5px;
             text-align: center;
@@ -71,10 +91,7 @@
             text-align: center;
             padding: 10px;
             margin-top: 20px;
-            position: fixed;
-            bottom: 0;
         }
-
     </style>
 </head>
 <body>
@@ -84,7 +101,8 @@
 
     <section class="plant-info">
         <div class="plant-image">
-            <img src="imagens/orlatao-lammel.jpg" alt="Orlatão Lammel">
+            <img src="conteudo/Orlatão Lammel.jpg" alt="Orlatão Lammel">
+            <img src="conteudo/foto internet/orlataolammel-internet.png" alt="Imagem da Internet - Orlatão Lammel">
         </div>
 
         <div class="plant-details">
@@ -93,25 +111,27 @@
             <p><strong>Nome popular:</strong> Orlatão Lammel</p>
             <p><strong>Família:</strong> Menispermaceae</p>
             <p><strong>Origem:</strong> América do Sul (especialmente Brasil)</p>
-
-            <h2>Características</h2>
-            <ul>
-                <li>Planta trepadeira, com ramos lenhosos e folhas cordiformes.</li>
-                <li>Flores pequenas, de cor amarelada, que aparecem em inflorescências.</li>
-                <li>Frutos pequenos, arredondados, que contêm sementes.</li>
-                <li>É uma planta perene que pode crescer em áreas sombreadas e úmidas.</li>
-            </ul>
-
-            <h2>Curiosidades</h2>
-            <p>O Orlatão Lammel é conhecido por suas propriedades medicinais e é utilizado na medicina popular para tratar diversas condições, incluindo problemas respiratórios e digestivos. É importante usar a planta com cautela, pois pode ter efeitos colaterais.</p>
-
-            <h2>Cuidados</h2>
-            <ul>
-                <li>Prefere solos bem drenados e ricos em matéria orgânica.</li>
-                <li>Requer sombra parcial para um bom desenvolvimento.</li>
-                <li>A rega deve ser regular, especialmente em períodos secos, mas sem encharcar o solo.</li>
-            </ul>
         </div>
+    </section>
+
+    <section class="rest-info">
+        <h2>Características</h2>
+        <ul>
+            <li>Planta trepadeira, com ramos lenhosos e folhas cordiformes.</li>
+            <li>Flores pequenas, de cor amarelada, que aparecem em inflorescências.</li>
+            <li>Frutos pequenos, arredondados, que contêm sementes.</li>
+            <li>É uma planta perene que pode crescer em áreas sombreadas e úmidas.</li>
+        </ul>
+
+        <h2>Curiosidades</h2>
+        <p>O Orlatão Lammel é conhecido por suas propriedades medicinais e é utilizado na medicina popular para tratar diversas condições, incluindo problemas respiratórios e digestivos. É importante usar a planta com cautela, pois pode ter efeitos colaterais.</p>
+
+        <h2>Cuidados</h2>
+        <ul>
+            <li>Prefere solos bem drenados e ricos em matéria orgânica.</li>
+            <li>Requer sombra parcial para um bom desenvolvimento.</li>
+            <li>A rega deve ser regular, especialmente em períodos secos, mas sem encharcar o solo.</li>
+        </ul>
     </section>
 
     <div class="plant-button">

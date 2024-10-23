@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cacto-macarrão - Flora da Escola</title>
-    <link rel="stylesheet" href="styles-planta.css">
     <style>
         * {
             margin: 0;
@@ -32,19 +31,40 @@
             font-size: 28px;
         }
 
-        header p {
-            font-size: 16px;
-            margin-top: 5px;
+        .plant-info {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: 20px;
+            width: 80%;
         }
 
-        .plant-list {
+        .plant-image {
+            display: flex;
+            gap: 20px;
+        }
+
+        .plant-image img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .plant-details {
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .rest-info {
+            margin-top: 20px;
             width: 80%;
-            margin: 20px 0;
         }
 
         .plant-button {
-            margin: 10px 0;
-            width: 100%;
+            margin-top: 20px;
             background-color: #3498db;
             border-radius: 5px;
             text-align: center;
@@ -71,20 +91,19 @@
             text-align: center;
             padding: 10px;
             margin-top: 20px;
-            position: fixed;
-            bottom: 0;
         }
-
     </style>
 </head>
 <body>
+
     <header>
         <h1>Cacto-macarrão (Pilosocereus gounellei)</h1>
     </header>
 
     <section class="plant-info">
         <div class="plant-image">
-            <img src="imagens/cacto-macarrao.jpg" alt="Cacto-macarrão">
+            <img src="conteudo/cacto macarrão.jpg" alt="Cacto Macarrão">
+            <img src="conteudo/foto internet/cactomacarrao-internet.jpg" alt="Imagem da Internet - Cacto Macarrão">
         </div>
 
         <div class="plant-details">
@@ -93,25 +112,27 @@
             <p><strong>Nome popular:</strong> Cacto-macarrão</p>
             <p><strong>Família:</strong> Cactaceae</p>
             <p><strong>Origem:</strong> Regiões áridas do Brasil, especialmente no Cerrado.</p>
-
-            <h2>Características</h2>
-            <ul>
-                <li>Apresenta colunas longas e finas, que podem atingir até 3 metros de altura.</li>
-                <li>Possui espinhos curtos e abundantes, com coloração que varia de amarelo a marrom.</li>
-                <li>Floresce com flores brancas ou amarelas, que geralmente abrem à noite.</li>
-                <li>É uma planta resistente à seca e se adapta bem a diferentes condições de solo.</li>
-            </ul>
-
-            <h2>Curiosidades</h2>
-            <p>O Cacto-macarrão é frequentemente usado na decoração de jardins xerófitos devido à sua aparência única. Além disso, suas flores atraem polinizadores noturnos, como mariposas.</p>
-
-            <h2>Cuidados</h2>
-            <ul>
-                <li>Prefere locais ensolarados e quentes.</li>
-                <li>O solo deve ser bem drenado, evitando o acúmulo de água.</li>
-                <li>A rega deve ser esporádica, principalmente em épocas secas.</li>
-            </ul>
         </div>
+    </section>
+
+    <section class="rest-info">
+        <h2>Características</h2>
+        <ul>
+            <li>Apresenta colunas longas e finas, que podem atingir até 3 metros de altura.</li>
+            <li>Possui espinhos curtos e abundantes, com coloração que varia de amarelo a marrom.</li>
+            <li>Floresce com flores brancas ou amarelas, que geralmente abrem à noite.</li>
+            <li>É uma planta resistente à seca e se adapta bem a diferentes condições de solo.</li>
+        </ul>
+
+        <h2>Curiosidades</h2>
+        <p>O Cacto-macarrão é frequentemente usado na decoração de jardins xerófitos devido à sua aparência única. Além disso, suas flores atraem polinizadores noturnos, como mariposas.</p>
+
+        <h2>Cuidados</h2>
+        <ul>
+            <li>Prefere locais ensolarados e quentes.</li>
+            <li>O solo deve ser bem drenado, evitando o acúmulo de água.</li>
+            <li>A rega deve ser esporádica, principalmente em épocas secas.</li>
+        </ul>
     </section>
 
     <div class="plant-button">
@@ -121,5 +142,6 @@
     <footer>
         <p>Flora da Escola - 2024</p>
     </footer>
+
 </body>
 </html>

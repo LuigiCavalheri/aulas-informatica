@@ -32,19 +32,46 @@
             font-size: 28px;
         }
 
-        header p {
-            font-size: 16px;
-            margin-top: 5px;
+        .plant-info {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: 20px;
+            width: 80%;
         }
 
-        .plant-list {
+        .plant-image {
+            display: flex;
+            gap: 10px;
+        }
+
+        .plant-image img {
+            max-height: 400px;
+            width: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .plant-image img:last-child {
+            object-fit: contain; /* Garante que a imagem caiba sem perder a qualidade */
+            width: 100%; /* Deixe a imagem se ajustar ao tamanho disponível */
+            height: auto; /* Mantém a proporção */
+        }
+
+        .plant-details {
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .rest-info {
+            margin-top: 20px;
             width: 80%;
-            margin: 20px 0;
         }
 
         .plant-button {
-            margin: 10px 0;
-            width: 100%;
+            margin-top: 20px;
             background-color: #3498db;
             border-radius: 5px;
             text-align: center;
@@ -71,10 +98,7 @@
             text-align: center;
             padding: 10px;
             margin-top: 20px;
-            position: fixed;
-            bottom: 0;
         }
-
     </style>
 </head>
 <body>
@@ -84,7 +108,8 @@
 
     <section class="plant-info">
         <div class="plant-image">
-            <img src="imagens/suculenta.jpg" alt="Suculenta">
+            <img src="conteudo/Suculenta.jpg" alt="Suculenta">
+            <img src="conteudo/foto internet/suculenta-internet.png" alt="Suculenta - Imagem da Internet">
         </div>
 
         <div class="plant-details">
@@ -93,25 +118,27 @@
             <p><strong>Nome popular:</strong> Suculenta</p>
             <p><strong>Família:</strong> Crassulaceae</p>
             <p><strong>Origem:</strong> África do Sul e regiões adjacentes.</p>
-
-            <h2>Características</h2>
-            <ul>
-                <li>Planta de crescimento lento, com folhas grossas e carnudas que armazenam água.</li>
-                <li>Produz flores pequenas e de cor rosa ou branca, geralmente em cachos.</li>
-                <li>Pode atingir até 1 metro de altura, dependendo das condições de cultivo.</li>
-                <li>É uma planta bastante resistente à seca.</li>
-            </ul>
-
-            <h2>Curiosidades</h2>
-            <p>As suculentas são populares em jardinagem e decoração de interiores devido à sua facilidade de cuidado. Acredita-se que elas trazem sorte e prosperidade, sendo comumente presentes em casas.</p>
-
-            <h2>Cuidados</h2>
-            <ul>
-                <li>Prefere luz solar direta ou parcial; a luz excessiva pode melhorar a coloração das folhas.</li>
-                <li>Solo bem drenado é essencial; use misturas específicas para suculentas.</li>
-                <li>Rega deve ser moderada; deixe o solo secar entre as regas para evitar apodrecimento das raízes.</li>
-            </ul>
         </div>
+    </section>
+
+    <section class="rest-info">
+        <h2>Características</h2>
+        <ul>
+            <li>Planta de crescimento lento, com folhas grossas e carnudas que armazenam água.</li>
+            <li>Produz flores pequenas e de cor rosa ou branca, geralmente em cachos.</li>
+            <li>Pode atingir até 1 metro de altura, dependendo das condições de cultivo.</li>
+            <li>É uma planta bastante resistente à seca.</li>
+        </ul>
+
+        <h2>Curiosidades</h2>
+        <p>As suculentas são populares em jardinagem e decoração de interiores devido à sua facilidade de cuidado. Acredita-se que elas trazem sorte e prosperidade, sendo comumente presentes em casas.</p>
+
+        <h2>Cuidados</h2>
+        <ul>
+            <li>Prefere luz solar direta ou parcial; a luz excessiva pode melhorar a coloração das folhas.</li>
+            <li>Solo bem drenado é essencial; use misturas específicas para suculentas.</li>
+            <li>Rega deve ser moderada; deixe o solo secar entre as regas para evitar apodrecimento das raízes.</li>
+        </ul>
     </section>
 
     <div class="plant-button">

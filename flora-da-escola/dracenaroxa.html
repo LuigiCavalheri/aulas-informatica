@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dracena Roxa - Flora da Escola</title>
-    <link rel="stylesheet" href="styles-planta.css">
     <style>
         * {
             margin: 0;
@@ -32,19 +31,40 @@
             font-size: 28px;
         }
 
-        header p {
-            font-size: 16px;
-            margin-top: 5px;
+        .plant-info {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: 20px;
+            width: 80%;
         }
 
-        .plant-list {
+        .plant-image {
+            display: flex;
+            gap: 20px;
+        }
+
+        .plant-image img {
+            max-height: 400px;
+            width: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .plant-details {
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .rest-info {
+            margin-top: 20px;
             width: 80%;
-            margin: 20px 0;
         }
 
         .plant-button {
-            margin: 10px 0;
-            width: 100%;
+            margin-top: 20px;
             background-color: #3498db;
             border-radius: 5px;
             text-align: center;
@@ -71,20 +91,19 @@
             text-align: center;
             padding: 10px;
             margin-top: 20px;
-            position: fixed;
-            bottom: 0;
         }
-
     </style>
 </head>
 <body>
+
     <header>
         <h1>Dracena Roxa (Dracaena marginata)</h1>
     </header>
 
     <section class="plant-info">
         <div class="plant-image">
-            <img src="imagens/dracena-roxa.jpg" alt="Dracena Roxa">
+            <img src="conteudo/Dracena roxa.jpg" alt="Dracena Roxa">
+            <img src="conteudo/foto internet/dracenaroxa-internet.jpg" alt="Imagem da Internet - Dracena Roxa">
         </div>
 
         <div class="plant-details">
@@ -93,34 +112,36 @@
             <p><strong>Nome popular:</strong> Dracena Roxa</p>
             <p><strong>Família:</strong> Asparagaceae</p>
             <p><strong>Origem:</strong> Madagascar</p>
-
-            <h2>Características</h2>
-            <ul>
-                <li>Planta ornamental de folhas longas e estreitas, com bordas vermelhas ou roxas.</li>
-                <li>Pode crescer até 2 metros de altura, dependendo das condições de cultivo.</li>
-                <li>As folhas são geralmente verde-escuras, com uma coloração roxa ou vermelha nas bordas.</li>
-                <li>Não produz flores com frequência em ambientes internos.</li>
-            </ul>
-
-            <h2>Curiosidades</h2>
-            <p>A Dracena Roxa é popular em interiores devido à sua capacidade de purificar o ar. Além disso, é considerada uma planta de fácil cuidado e manutenção, sendo ideal para iniciantes.</p>
-
-            <h2>Cuidados</h2>
-            <ul>
-                <li>Solo bem drenado e rico em matéria orgânica.</li>
-                <li>Prefere luz indireta e não tolera luz solar direta por longos períodos.</li>
-                <li>Rega moderada, permitindo que o solo seque entre as regas.</li>
-            </ul>
         </div>
+    </section>
+
+    <section class="rest-info">
+        <h2>Características</h2>
+        <ul>
+            <li>Planta ornamental de folhas longas e estreitas, com bordas vermelhas ou roxas.</li>
+            <li>Pode crescer até 2 metros de altura, dependendo das condições de cultivo.</li>
+            <li>As folhas são geralmente verde-escuras, com uma coloração roxa ou vermelha nas bordas.</li>
+            <li>Não produz flores com frequência em ambientes internos.</li>
+        </ul>
+
+        <h2>Curiosidades</h2>
+        <p>A Dracena Roxa é popular em interiores devido à sua capacidade de purificar o ar. Além disso, é considerada uma planta de fácil cuidado e manutenção, sendo ideal para iniciantes.</p>
+
+        <h2>Cuidados</h2>
+        <ul>
+            <li>Solo bem drenado e rico em matéria orgânica.</li>
+            <li>Prefere luz indireta e não tolera luz solar direta por longos períodos.</li>
+            <li>Rega moderada, permitindo que o solo seque entre as regas.</li>
+        </ul>
     </section>
 
     <div class="plant-button">
         <a href="index.html">Voltar ao Index</a>
     </div>
 
-
     <footer>
         <p>Flora da Escola - 2024</p>
     </footer>
+
 </body>
 </html>

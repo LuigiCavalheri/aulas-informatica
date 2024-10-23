@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pracaxi - Flora da Escola</title>
-    <link rel="stylesheet" href="styles-planta.css">
     <style>
         * {
             margin: 0;
@@ -32,19 +31,40 @@
             font-size: 28px;
         }
 
-        header p {
-            font-size: 16px;
-            margin-top: 5px;
+        .plant-info {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: 20px;
+            width: 80%;
         }
 
-        .plant-list {
+        .plant-image {
+            display: flex;
+            gap: 10px;
+        }
+
+        .plant-image img {
+            max-height: 400px;
+            width: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .plant-details {
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .rest-info {
+            margin-top: 20px;
             width: 80%;
-            margin: 20px 0;
         }
 
         .plant-button {
-            margin: 10px 0;
-            width: 100%;
+            margin-top: 20px;
             background-color: #3498db;
             border-radius: 5px;
             text-align: center;
@@ -71,10 +91,7 @@
             text-align: center;
             padding: 10px;
             margin-top: 20px;
-            position: fixed;
-            bottom: 0;
         }
-
     </style>
 </head>
 <body>
@@ -84,7 +101,8 @@
 
     <section class="plant-info">
         <div class="plant-image">
-            <img src="imagens/pracaxi.jpg" alt="Pracaxi">
+            <img src="conteudo/pracaxi.jpg" alt="Pracaxi">
+            <img src="conteudo/foto internet/pracaxi-internet.png" alt="Pracaxi - Imagem da Internet">
         </div>
 
         <div class="plant-details">
@@ -93,26 +111,32 @@
             <p><strong>Nome popular:</strong> Pracaxi</p>
             <p><strong>Família:</strong> Fabaceae</p>
             <p><strong>Origem:</strong> Florestas tropicais da Amazônia</p>
-
-            <h2>Características</h2>
-            <ul>
-                <li>Árvore de grande porte, podendo atingir até 35 metros de altura.</li>
-                <li>Folhas compostas e bipinadas, com folíolos pequenos e numerosos.</li>
-                <li>Frutos grandes, em forma de vagem, contendo sementes ricas em óleo.</li>
-                <li>É muito resistente a solos encharcados, sendo comum em áreas alagadiças.</li>
-            </ul>
-
-            <h2>Curiosidades</h2>
-            <p>O óleo extraído das sementes de Pracaxi é amplamente utilizado na indústria cosmética, devido às suas propriedades hidratantes e cicatrizantes. Ele é conhecido por ajudar no tratamento de pele e cabelo, além de ser utilizado para fins medicinais pelas populações indígenas da Amazônia.</p>
-
-            <h2>Cuidados</h2>
-            <ul>
-                <li>Solo úmido, podendo tolerar áreas encharcadas.</li>
-                <li>Ambiente de floresta tropical, com alta umidade e temperaturas elevadas.</li>
-                <li>Rega regular, mantendo o solo sempre úmido.</li>
-            </ul>
         </div>
     </section>
+
+    <section class="rest-info">
+        <h2>Características</h2>
+        <ul>
+            <li>Árvore de grande porte, podendo atingir até 35 metros de altura.</li>
+            <li>Folhas compostas e bipinadas, com folíolos pequenos e numerosos.</li>
+            <li>Frutos grandes, em forma de vagem, contendo sementes ricas em óleo.</li>
+            <li>É muito resistente a solos encharcados, sendo comum em áreas alagadiças.</li>
+        </ul>
+
+        <h2>Curiosidades</h2>
+        <p>O óleo extraído das sementes de Pracaxi é amplamente utilizado na indústria cosmética, devido às suas propriedades hidratantes e cicatrizantes. Ele é conhecido por ajudar no tratamento de pele e cabelo, além de ser utilizado para fins medicinais pelas populações indígenas da Amazônia.</p>
+
+        <h2>Cuidados</h2>
+        <ul>
+            <li>Solo úmido, podendo tolerar áreas encharcadas.</li>
+            <li>Ambiente de floresta tropical, com alta umidade e temperaturas elevadas.</li>
+            <li>Rega regular, mantendo o solo sempre úmido.</li>
+        </ul>
+    </section>
+
+    <div class="plant-button">
+        <a href="index.html">Voltar ao Index</a>
+    </div>
 
     <footer>
         <p>Flora da Escola - 2024</p>

@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aspargo Alfinete - Flora da Escola</title>
-    <link rel="stylesheet" href="styles-planta.css">
     <style>
         * {
             margin: 0;
@@ -32,19 +31,40 @@
             font-size: 28px;
         }
 
-        header p {
-            font-size: 16px;
-            margin-top: 5px;
+        .plant-info {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: 20px;
+            width: 80%;
         }
 
-        .plant-list {
+        .plant-image {
+            display: flex;
+            gap: 20px;
+        }
+
+        .plant-image img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .plant-details {
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .rest-info {
+            margin-top: 20px;
             width: 80%;
-            margin: 20px 0;
         }
 
         .plant-button {
-            margin: 10px 0;
-            width: 100%;
+            margin-top: 20px;
             background-color: #3498db;
             border-radius: 5px;
             text-align: center;
@@ -71,20 +91,19 @@
             text-align: center;
             padding: 10px;
             margin-top: 20px;
-            position: fixed;
-            bottom: 0;
         }
-
     </style>
 </head>
 <body>
+
     <header>
         <h1>Aspargo Alfinete (Asparagus densiflorus)</h1>
     </header>
 
     <section class="plant-info">
         <div class="plant-image">
-            <img src="imagens/aspargo-alfinete.jpg" alt="Aspargo Alfinete">
+            <img src="conteudo/Aspargo alfinete.jpg" alt="Aspargo Alfinete">
+            <img src="conteudo/foto internet/aspargoalfinete-internet.jpg" alt="Imagem da Internet - Aspargo Alfinete">
         </div>
 
         <div class="plant-details">
@@ -93,34 +112,36 @@
             <p><strong>Nome popular:</strong> Aspargo Alfinete</p>
             <p><strong>Família:</strong> Asparagaceae</p>
             <p><strong>Origem:</strong> África do Sul</p>
-
-            <h2>Características</h2>
-            <ul>
-                <li>Planta herbácea com folhagem fina e delicada, lembrando pequenas agulhas.</li>
-                <li>É uma planta perene, que pode atingir de 60 cm a 1 metro de altura.</li>
-                <li>Forma arbustos densos e esverdeados, frequentemente utilizados em paisagismo.</li>
-                <li>Produz pequenas flores brancas ou rosadas, seguidas por frutinhos vermelhos.</li>
-            </ul>
-
-            <h2>Curiosidades</h2>
-            <p>O Aspargo Alfinete é muito popular como planta ornamental, especialmente em vasos e jardins suspensos. Apesar de sua aparência delicada, ele é resistente e se adapta bem a ambientes internos e externos. Além disso, suas bagas vermelhas, embora atraentes, são tóxicas se ingeridas.</p>
-
-            <h2>Cuidados</h2>
-            <ul>
-                <li>Prefere solo bem drenado e rico em matéria orgânica.</li>
-                <li>Ambientes com luz difusa ou meia sombra.</li>
-                <li>Rega moderada, mantendo o solo úmido, mas sem encharcar.</li>
-            </ul>
         </div>
+    </section>
+
+    <section class="rest-info">
+        <h2>Características</h2>
+        <ul>
+            <li>Planta herbácea com folhagem fina e delicada, lembrando pequenas agulhas.</li>
+            <li>É uma planta perene, que pode atingir de 60 cm a 1 metro de altura.</li>
+            <li>Forma arbustos densos e esverdeados, frequentemente utilizados em paisagismo.</li>
+            <li>Produz pequenas flores brancas ou rosadas, seguidas por frutinhos vermelhos.</li>
+        </ul>
+
+        <h2>Curiosidades</h2>
+        <p>O Aspargo Alfinete é muito popular como planta ornamental, especialmente em vasos e jardins suspensos. Apesar de sua aparência delicada, ele é resistente e se adapta bem a ambientes internos e externos. Além disso, suas bagas vermelhas, embora atraentes, são tóxicas se ingeridas.</p>
+
+        <h2>Cuidados</h2>
+        <ul>
+            <li>Prefere solo bem drenado e rico em matéria orgânica.</li>
+            <li>Ambientes com luz difusa ou meia sombra.</li>
+            <li>Rega moderada, mantendo o solo úmido, mas sem encharcar.</li>
+        </ul>
     </section>
 
     <div class="plant-button">
         <a href="index.html">Voltar ao Index</a>
     </div>
 
-
     <footer>
         <p>Flora da Escola - 2024</p>
     </footer>
+
 </body>
 </html>
